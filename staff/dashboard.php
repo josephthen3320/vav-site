@@ -1,7 +1,7 @@
 <?php
 
-    require ('php/auth.php');
-    require ('../php/config.php');
+    include ('php/auth.php');
+    include ('php/config.php');
 
 ?>
 

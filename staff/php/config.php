@@ -1,12 +1,12 @@
 <?php
 
-$servername =   "localhost";
-$username   =   "nara";
-$password   =   "tr1mul1aH!TS";
-$db   =   "vis-a-vis";
+$db_host =   "localhost";
+$db_username   =   "nara";
+$db_password   =   "tr1mul1aH!TS";
+$db_name   =   "vis-a-vis";
 
 // Create connection
-$conn   =   new mysqli($servername, $username, $password, $db);
+$conn   =   new mysqli($db_host, $db_username, $db_password, $db_name);
 
 // Check Connection
 if ($conn->connect_error) {

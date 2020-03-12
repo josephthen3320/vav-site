@@ -1,12 +1,16 @@
 <?php
 
-require ('config.php');
+session_start();
+include ('config.php');
 
     // Session check
-    session_start();
     if(!isset($_SESSION["username"])){
+        print('no_session');
         header("Location: staff-login.php");
-        exit();
+    } else {
+        $username = $_SESSION['username'];
     }
+
+
 
 ?>
