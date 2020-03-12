@@ -1,12 +1,13 @@
 <?php
-    require ('php/config.php');
-    require ('php/auth.php');
-?>
 
+    require ('php/auth.php');
+    require ('../php/config.php');
+
+?>
 
 <!DOCTYPE html>
 <html>
-<title><?php echo "$username"; ?> | V-Inbox</title>
+<title><?php echo "$username"; ?> | V-Dashboard</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="../css/w3.css">
@@ -42,7 +43,7 @@
 </style>
 
 <body class="w3-theme-l5">
-    <!-- Navbar -->
+
     <div class="w3-theme-d5">
         <!-- Navbar on large screens -->
         <div class="w3-bar w3-display-container" id="myNavbar">
@@ -50,8 +51,8 @@
                 <i class="fa fa-bars"></i>
             </a>
 
-            <a href="dashboard.php" class="w3-bar-item w3-button w3-left w3-hover-theme"><i class="fa fa-home"></i> DASHBOARD</a>
-            <a href="#" class="w3-bar-item w3-button w3-theme w3-hide-small w3-hide-medium"><i class="fa fa-envelope"></i> INBOX</a>
+            <a href="#" class="w3-bar-item w3-button w3-left w3-theme"><i class="fa fa-home"></i> DASHBOARD</a>
+            <a href="inbox.php" class="w3-bar-item w3-button w3-hover-theme w3-hide-small w3-hide-medium"><i class="fa fa-envelope"></i> INBOX</a>
             <a href="toolbox.php" class="w3-bar-item w3-button w3-hover-theme w3-hide-small w3-hide-medium"><i class="fa fa-archive"></i> TOOL BOX</a>
             <div class="w3-bar-item w3-display-middle">VAV Dashboard | <?php echo "$username"; ?></div>
             <div class="w3-right w3-hide-small w3-hide-medium">
@@ -67,57 +68,6 @@
         </div>
 
     </div>
-
-
-<div class="w3-cell w3-container w3-center" style="width: 100%; margin: auto;"></div>
-    <div class="w3-threequarter w3-theme-l4 w3-padding-64 w3-cell-middle w3-center w3-container" style="margin: auto;">
-        <h5 class="w3-center"><span class="w3-theme w3-wide w3-tag">Website Inbox</span></h5>
-        <br>
-        <div class="w3-col w3-container w3-hide-small w3-hide-medium" style="width: 5%;"></div>
-        <div class="w3-center w3-col w3-container">
-            <table class="w3-table-all w3-centered" style="width: 100%; table-layout: fixed; word-wrap: break-word;">
-                <tr>
-                    <th class="w3-center" style="width: 10%;">
-                        #
-                    </th>
-                    <th class="w3-center">
-                        Name
-                    </th>
-                    <th class="w3-center">
-                        Email Address
-                    </th>
-                    <th class="w3-center" style="width: 40%;">
-                        Message Content
-                    </th>
-                    <th class="w3-center">
-                        Operations
-                    </th>
-                </tr>
-                <?php
-                    $msg_no         =   0;
-
-                    $inbox_query    =   "SELECT * FROM messages";
-                    $inbox_result   =   $conn->query($inbox_query);
-
-                    while ($row = $inbox_result->fetch_array()) {
-                        $msg_no ++;
-                        echo "<tr>
-                                    <td>$msg_no</td>
-                                    <td>$row[msg_name]</td>
-                                    <td><a href='mailto:$row[msg_email]'>$row[msg_email]</a></td>
-                                    <td>$row[msg_content]</td>
-                               </tr>";
-
-                    }
-                ?>
-            </table>
-        </div>
-        <div class="w3-col w3-container w3-hide-small w3-hide-medium" style="width: 5%;"></div>
-
-        <br><br>
-    </div>
-
-
 
 </body>
 </html>

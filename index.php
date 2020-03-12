@@ -109,7 +109,7 @@
         <a href="#about" class="w3-bar-item w3-button w3-theme-d5 w3-hover-theme w3-hide-small"><i class="fa fa-users"></i> ABOUT</a>
         <a href="#dept" class="w3-bar-item w3-button w3-theme-d5 w3-hover-theme w3-hide-small"><i class="fa fa-heart"></i> DEPARTMENTS</a>
         <a href="#prog" class="w3-bar-item w3-button w3-theme-d5 w3-hover-theme w3-hide-small"><i class="fa fa-star"></i> PROGRAMMES</a>
-        <a href="staff/staff-login.php" class="w3-bar-item w3-button w3-theme-d5 w3-hover-theme w3-right w3-hide-small">STAFF AREA <i class="fa fa-sign-in"></i></a>
+        <a href="staff/dashboard.php" class="w3-bar-item w3-button w3-theme-d5 w3-hover-theme w3-right w3-hide-small">STAFF AREA <i class="fa fa-sign-in"></i></a>
     </div>
 
     <!-- Navbar on small screens -->
@@ -117,7 +117,7 @@
         <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
         <a href="#dept" class="w3-bar-item w3-button" onclick="toggleFunction()">DEPARTMENTS</a>
         <a href="#prog" class="w3-bar-item w3-button" onclick="toggleFunction()">PROGRAMMES</a>
-        <a href="staff/staff-login.php" class="w3-bar-item w3-button" onclick="toggleFunction()">STAFF AREA</a>
+        <a href="staff/dashboard.php" class="w3-bar-item w3-button" onclick="toggleFunction()">STAFF AREA</a>
 
     </div>
 </div>

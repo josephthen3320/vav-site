@@ -1,3 +1,38 @@
+<?php
+    require ('../php/config.php');
+
+    // Session check
+    session_start();
+
+    $login_err = "";
+    // If form submitted, insert values into the database.
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    //if (isset($_POST['username'])) {
+        // removes backslashes
+        $username = stripslashes($_REQUEST['username']);
+
+        //escapes special characters in a string
+        $username = mysqli_real_escape_string($conn, $username);
+        $password = stripslashes($_REQUEST['password']);
+        $password = mysqli_real_escape_string($conn, $password);
+
+        //Checking is user existing in the database or not
+        $query = "SELECT * FROM `staff_login` WHERE username='$username' and password='$password'";
+        $result = mysqli_query($conn, $query) or die(mysql_error());
+        $rows = mysqli_num_rows($result);
+
+        if ($rows == 1) {
+            $_SESSION['username'] = $username;
+            // Redirect user to dashboard
+            header("Location: dashboard.php");
+        } else {
+            $login_err = "Invalid username and/or password.";
+        }
+    }
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <title>The Vis-à-Vis Organization</title>
@@ -57,15 +92,16 @@
         </div><br>
         <div class="w3-container w3-quarter"></div>
         <div class="w3-container w3-half w3-center">
-            <form class="w3-container">
+            <form class="w3-container" action="<?php echo htmlspecialchars($_SERVER["REQUEST_URI"]);?>" method="post">
 
                 <label class="w3-text-theme"><b>Username</b></label>
-                <input class="w3-input w3-border" type="text">
+                <input class="w3-input w3-border" type="text" name="username" placeholder="Username">
 
                 <label class="w3-text-theme"><b>Password</b></label>
-                <input class="w3-input w3-border" type="password" id="password">
-                <input type="checkbox" onclick="myFunction()">Show Password
+                <input class="w3-input w3-border" type="password" id="password" name="password" placeholder="Password">
+                <input type="checkbox" onclick="myFunction()" id="pwShowCheck01"><label class="w3-text-theme" for="pwShowCheck01"> Show Password</label>
 
+                <h6 class="w3-text-red"><b><?php echo "$login_err"; ?></b></h6>
                 <br><br>
                 <button class="w3-btn w3-theme-d3">Register</button>
 
@@ -79,15 +115,16 @@
         <div class="w3-bar w3-theme">
             <h3 class="w3-center w3-bar">Staff Login</h3>
         </div><br />
-        <form class="w3-container">
+        <form class="w3-container" action="<?php echo htmlspecialchars($_SERVER["REQUEST_URI"]);?>" method="post">
 
             <label class="w3-text-theme"><b>Username</b></label>
-            <input class="w3-input w3-border" type="text">
+            <input class="w3-input w3-border" type="text" name="username">
 
             <label class="w3-text-theme"><b>Password</b></label>
-            <input class="w3-input w3-border" type="password" id="password2">
-            <input type="checkbox" onclick="myFunction()">Show Password
+            <input class="w3-input w3-border" type="password" id="password2" name="password">
+            <input class="w3-check" type="checkbox" onclick="myFunction()" id="pwShowCheck02"><label class="w3-text-theme" for="pwShowCheck02"> Show Password</label>
 
+            <h6 class="w3-text-red"><b><?php echo "$login_err"; ?></b></h6>
             <br><br>
             <button class="w3-btn w3-theme-d3 w3-bar">Register</button>
 
