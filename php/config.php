@@ -1,8 +1,8 @@
 <?php
 
 $servername =   "localhost";
-$username   =   "root";
-$password   =   "";
+$username   =   "nara";
+$password   =   "tr1mul1aH!TS";
 $db   =   "vis-a-vis";
 
 // Create connection
