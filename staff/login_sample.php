@@ -19,7 +19,7 @@ if (isset($_POST['username'])){
     $password = mysqli_real_escape_string($conn,$password);
     //Checking is user existing in the database or not
     $query = "SELECT * FROM `staff_login` WHERE username='$username'
-and password='".md5($password)."'";
+and password='$password'";
     $result = mysqli_query($conn,$query) or die(mysql_error());
     $rows = mysqli_num_rows($result);
     if($rows==1){
