@@ -12,7 +12,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="../css/w3.css">
 <link rel="stylesheet" href="../css/color-theme.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
 <style>
     body, html {
@@ -51,20 +51,33 @@
                 <i class="fa fa-bars"></i>
             </a>
 
-            <a href="#" class="w3-bar-item w3-button w3-left w3-theme"><i class="fa fa-home"></i> DASHBOARD</a>
+            <a href="#" class="w3-bar-item w3-button w3-left w3-theme w3-dropdown-hover"><i class="fa fa-home"></i> DASHBOARD</a>
             <a href="inbox.php" class="w3-bar-item w3-button w3-hover-theme w3-hide-small w3-hide-medium"><i class="fa fa-envelope"></i> INBOX</a>
             <a href="toolbox.php" class="w3-bar-item w3-button w3-hover-theme w3-hide-small w3-hide-medium"><i class="fa fa-archive"></i> TOOL BOX</a>
+            <?php
+                if($username == 'nara') {
+                    echo '<a href="superuser/su-dashboard.php" class="w3-bar-item w3-button w3-hover-pale-red w3-hide-small w3-hide-medium  "><i class="fa fa-dragon w3-text-red"></i> RED DASHBOARD</a>';
+                }
+
+            ?>
+
             <div class="w3-bar-item w3-display-middle">VAV Dashboard | <?php echo "$username"; ?></div>
             <div class="w3-right w3-hide-small w3-hide-medium">
-                <a href="php/logout.php" class="w3-bar-item w3-button w3-hover-red w3-hide-small w3-hide-medium">Log Out <i class="fa fa-sign-out"></i></a>
+                <a href="php/logout.php" class="w3-bar-item w3-button w3-hover-red w3-hide-small w3-hide-medium">Log Out <i class="fa fa-sign-out-alt"></i></a>
             </div>
         </div>
 
         <!-- Navbar on small screens -->
         <div id="navDemo" class="w3-bar-block w3-theme-d1 w3-hide w3-hide-large w3-hide-medium">
-            <a href="inbox.php" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-envelope"></i> INBOX</a>
-            <a href="toolbox.php" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-archive"></i> TOOL BOX</a>
-            <a href="php/logout.php" class="w3-bar-item w3-button w3-hover-red" onclick="toggleFunction()"><i class="fa fa-sign-out"></i> LOG OUT</a>
+            <?php
+            if($username == 'nara') {
+                echo '<a href="superuser/su-dashboard.php" class="w3-bar-item w3-button w3-hover-pale-red"><i class="fa fa-dragon w3-text-red"></i> RED DASHBOARD</a>';
+            }
+
+            ?>
+            <a href="inbox.php" class="w3-bar-item w3-button w3-hover-theme" onclick="toggleFunction()"><i class="fa fa-envelope"></i> INBOX</a>
+            <a href="toolbox.php" class="w3-bar-item w3-button w3-hover-theme" onclick="toggleFunction()"><i class="fa fa-archive"></i> TOOL BOX</a>
+            <a href="php/logout.php" class="w3-bar-item w3-button w3-hover-red" onclick="toggleFunction()"><i class="fa fa-sign-out-alt"></i> LOG OUT</a>
         </div>
 
     </div>

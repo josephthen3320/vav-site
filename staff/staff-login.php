@@ -76,7 +76,7 @@
 
                 <h6 class="w3-text-red"><b><?php echo "$login_err"; ?></b></h6>
                 <br><br>
-                <button class="w3-btn w3-theme-d3">Login</button>
+                <button class="w3-btn w3-theme-d3 w3-bar">Login</button>
 
             </form>
         </div>
