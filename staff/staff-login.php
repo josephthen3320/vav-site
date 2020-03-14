@@ -43,13 +43,13 @@
 <body class="w3-theme-d5 w3-display-container">
 
     <div class="w3-center w3-display-middle">
-        <a href="http://vav.josephthenara.com/">
+        <a href="../">
             <img src="img/vav_web_logo.svg" height="80">
         </a>
         <p class="w3-center">
             <em>Making connections, starting with the server</em><br />
             从服务器开始进行连接</p>
-        <p>
+        <p class="w3-text-red">
             <?php echo "$login_err"; ?>
         </p>
         <form method="post" action="<?php echo htmlspecialchars($_SERVER["REQUEST_URI"]);?>">
@@ -66,7 +66,7 @@
 
     </div>
     <div class="w3-bottom w3-panel w3-center">
-        <p class="w3-small">VAV Secure Login System v.1.0.2</p>
+        <p class="w3-small">VAV Secure Login System v.1.0.3</p>
     </div>
 
 
