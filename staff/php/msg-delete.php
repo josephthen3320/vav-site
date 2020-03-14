@@ -5,13 +5,13 @@
 
     echo "$msgID";
 
-    $msgSelectRecord = "SELECT * FROM messages WHERE msg_id=$msgID";
-    $msgSelectQuery = $conn->query($msgSelectRecord);
-    $msgSelectRow = $msgSelectQuery->fetch_array();
+    $msgSelectRecord    =   "SELECT * FROM messages WHERE msg_id=$msgID";
+    $msgSelectQuery     =   $conn->query($msgSelectRecord);
+    $msgSelectRow       =   $msgSelectQuery->fetch_array();
 
     echo "$msgSelectRow[msg_name]";
 
-    $delErr = "";
+    $delErr =   "";
 
     $delSql =   "DELETE FROM messages WHERE msg_id = $msgID";
 
@@ -20,6 +20,6 @@
         header('Location: ../inbox.php');
         exit;
     } else {
-        $delErr = "Error deleting message record.";
+        $delErr =   "Error deleting message record.";
     }
 ?>

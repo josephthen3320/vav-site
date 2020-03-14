@@ -2,14 +2,13 @@
     require ("php/config.php");
 ?>
 
-
 <!DOCTYPE html>
 <html>
 <title>The Vis-à-Vis Organization</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/w3.css">
-<link rel="stylesheet" href="css/color-theme.css">
+<link rel="stylesheet" href="http://static.josephthenara.com/vav-media/css/w3.css">
+<link rel="stylesheet" href="http://static.josephthenara.com/vav-media/css/color-theme.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
 <style>
@@ -21,7 +20,7 @@
     .bgimg {
         background-position: center;
         background-size: cover;
-        background-image: url("img/bg01.jpg");
+        background-image: url("http://static.josephthenara.com/vav-media/img/homepage/bg_01.jpg");
         min-height: 75%;
     }
 
@@ -174,7 +173,7 @@
         <div class="w3-row-padding" style="margin-top:64px">
             <div class="w3-quarter l2 m6 w3-margin-bottom">
                 <div class="w3-card">
-                    <img src="img/dept/Mkt.jpg" alt="marketing" style="width:100%">
+                    <img src="http://static.josephthenara.com/vav-media/img/department/Marketing_01.jpg" alt="marketing" style="width:100%">
                     <div class="w3-container">
                         <h3>Marketing (MKT)</h3>
                         <p class="w3-opacity">Monika & Sia</p>
@@ -187,7 +186,7 @@
             </div>
             <div class="w3-quarter l2 m6 w3-margin-bottom">
                 <div class="w3-card">
-                    <img src="img/dept/IT.jpg" alt="IT" style="width:100%">
+                    <img src="http://static.josephthenara.com/vav-media/img/department/InfoTech_01.jpg" alt="IT" style="width:100%">
                     <div class="w3-container">
                         <h3>Information Tech. (IT)</h3>
                         <p class="w3-opacity">Iris & Yuki</p>
@@ -200,7 +199,7 @@
             </div>
             <div class="w3-quarter l2 m6 w3-margin-bottom">
                 <div class="w3-card">
-                    <img src="img/dept/HR.jpg" alt="Human Resources" style="width:100%">
+                    <img src="http://static.josephthenara.com/vav-media/img/department/HumanResources_01.jpg" alt="Human Resources" style="width:100%">
                     <div class="w3-container">
                         <h3>Human Resources (HR)</h3>
                         <p class="w3-opacity">Oscar</p>
@@ -213,7 +212,7 @@
             </div>
             <div class="w3-quarter l2 m6 w3-margin-bottom">
                 <div class="w3-card">
-                    <img src="img/dept/Sec.jpg" alt="Secretary" style="width:100%">
+                    <img src="http://static.josephthenara.com/vav-media/img/department/Secretary_01.jpg" alt="Secretary" style="width:100%">
                     <div class="w3-container">
                         <h3>Secretary (Sec)</h3>
                         <p class="w3-opacity">Antone</p>
@@ -226,7 +225,7 @@
             </div>
             <div class="w3-quarter l2 m6 w3-margin-bottom">
                 <div class="w3-card">
-                    <img src="img/dept/Fin.jpg" alt="Finance" style="width:100%">
+                    <img src="http://static.josephthenara.com/vav-media/img/department/Finance_01.jpg" alt="Finance" style="width:100%">
                     <div class="w3-container">
                         <h3>Finance (Fin)</h3>
                         <p class="w3-opacity">Lydia</p>
@@ -239,7 +238,7 @@
             </div>
             <div class="w3-quarter l2 m6 w3-margin-bottom">
                 <div class="w3-card">
-                    <img src="img/dept/Pres.jpg" alt="Presidents" style="width:100%">
+                    <img src="http://static.josephthenara.com/vav-media/img/department/PresidentTeam_01.jpg" alt="Presidents" style="width:100%">
                     <div class="w3-container">
                         <h3>President Team</h3>
                         <p class="w3-opacity">Henry, Lucie, Sam, Maggie</p>
@@ -260,7 +259,7 @@
         <div class="w3-row-padding" style="margin-top:64px">
             <div class="w3-quarter l2 m6 w3-margin-bottom">
                 <div class="w3-card">
-                    <img src="img/progs/BS.png" alt="Buddy System" style="width:100%">
+                    <img src="http://static.josephthenara.com/vav-media/img/programme/BuddySystem_01.jpg" alt="Buddy System" style="width:100%">
                     <div class="w3-container">
                         <h3>Buddy System (BS)</h3>
                         <p class="w3-opacity">Smile</p>
@@ -273,7 +272,7 @@
             </div>
             <div class="w3-quarter l2 m6 w3-margin-bottom">
                 <div class="w3-card">
-                    <img src="img/progs/OLLE.jpg" alt="Online Language Learning Exchange" style="width:100%">
+                    <img src="http://static.josephthenara.com/vav-media/img/programme/OLLE_01.jpg" alt="Online Language Learning Exchange" style="width:100%">
                     <div class="w3-container">
                         <h3>OLLE</h3>
                         <p class="w3-opacity">Clara</p>
@@ -286,7 +285,7 @@
             </div>
             <div class="w3-quarter l2 m6 w3-margin-bottom">
                 <div class="w3-card">
-                    <img src="img/progs/BF.jpg" alt="Bonne Fête" style="width:100%">
+                    <img src="http://static.josephthenara.com/vav-media/img/programme/BonneFete_01.jpg" alt="Bonne Fête" style="width:100%">
                     <div class="w3-container">
                         <h3>Bonne Fête (BF)</h3>
                         <p class="w3-opacity">Freya</p>
@@ -299,7 +298,7 @@
             </div>
             <div class="w3-quarter l2 m6 w3-margin-bottom">
                 <div class="w3-card">
-                    <img src="img/progs/HS.jpg" alt="Home Stay" style="width:100%">
+                    <img src="http://static.josephthenara.com/vav-media/img/programme/HomeStay_01.jpg" alt="Home Stay" style="width:100%">
                     <div class="w3-container">
                         <h3>Home Stay (HS)</h3>
                         <p class="w3-opacity">Emiliana</p>
@@ -312,7 +311,7 @@
             </div>
             <div class="w3-quarter l2 m6 w3-margin-bottom">
                 <div class="w3-card">
-                    <img src="img/progs/PACT.jpg" alt="PACT" style="width:100%">
+                    <img src="http://static.josephthenara.com/vav-media/img/programme/PACT_01.jpg" alt="PACT" style="width:100%">
                     <div class="w3-container">
                         <h3>PACT</h3>
                         <p class="w3-opacity">Mia</p>
@@ -325,7 +324,7 @@
             </div>
             <div class="w3-quarter l2 m6 w3-margin-bottom">
                 <div class="w3-card">
-                    <img src="img/progs/GoUK.jpg" alt="Go UK!" style="width:100%">
+                    <img src="http://static.josephthenara.com/vav-media/img/programme/GoUK_01.jpg" alt="Go UK!" style="width:100%">
                     <div class="w3-container">
                         <h3>Go~UK!</h3>
                         <p class="w3-opacity">Wendy</p>
@@ -338,7 +337,7 @@
             </div>
             <div class="w3-quarter l2 m6 w3-margin-bottom">
                 <div class="w3-card">
-                    <img src="img/progs/Tra.jpg" alt="Travelling" style="width:100%">
+                    <img src="http://static.josephthenara.com/vav-media/img/programme/Travelling_01.jpg" alt="Travelling" style="width:100%">
                     <div class="w3-container">
                         <h3>Travelling (Tra)</h3>
                         <p class="w3-opacity">Lilian</p>
@@ -357,7 +356,7 @@
         <div class="w3-content" style="max-width:700px">
             <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide w3-theme-l1">WHERE TO FIND US</span></h5>
             <p>The one and only place to find us: </p>
-            <img src="img/unnc-trent.jpg" class="w3-image" style="width:100%">
+            <img src="http://static.josephthenara.com/vav-media/img/homepage/unnc-trent.jpg" class="w3-image" style="width:100%">
             <p><span class="w3-tag">FYI!</span> The Vis-à-Vis Organization is only available in The University of Nottingham Ningbo China (UNNC) Campus!</p>
 <hr />
             <p><strong>Inquire</strong> about us, our events or just swing by for a cup of <i class="fa fa-coffee"></i> : </p>

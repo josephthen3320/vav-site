@@ -3,14 +3,13 @@
     require ('php/auth.php');
 ?>
 
-
 <!DOCTYPE html>
 <html>
 <title><?php echo "$username"; ?> | V-Inbox</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../css/w3.css">
-<link rel="stylesheet" href="../css/color-theme.css">
+<link rel="stylesheet" href="http://static.josephthenara.com/vav-media/css/w3.css">
+<link rel="stylesheet" href="http://static.josephthenara.com/vav-media/css/color-theme.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
 <style>
@@ -29,16 +28,6 @@
     .menu {
         display: none;
     }
-
-    #login-form {
-        width: 30%;           /* Set this to your convenience */
-        height: 60%;          /* Set this to your convenience */
-        position: absolute;
-        top: 30%;
-        left: 42.5%;
-        margin-top: -100px;     /* Half of height */
-        margin-left: -150px;     /* Half of width */
-    }
 </style>
 
 <body class="w3-theme-l5">
@@ -53,6 +42,8 @@
             <a href="dashboard.php" class="w3-bar-item w3-button w3-left w3-hover-theme"><i class="fa fa-home"></i> DASHBOARD</a>
             <a href="#" class="w3-bar-item w3-button w3-theme w3-hide-small w3-hide-medium"><i class="fa fa-envelope"></i> INBOX</a>
             <a href="toolbox.php" class="w3-bar-item w3-button w3-hover-theme w3-hide-small w3-hide-medium"><i class="fa fa-archive"></i> TOOL BOX</a>
+            <?php include ('modular/staff-su-header-auth.php'); ?>
+
             <div class="w3-bar-item w3-display-middle">VAV Dashboard | <?php echo "$username"; ?></div>
             <div class="w3-right w3-hide-small w3-hide-medium">
                 <a href="php/logout.php" class="w3-bar-item w3-button w3-hover-red w3-hide-small w3-hide-medium">Log Out <i class="fa fa-sign-out-alt"></i></a>

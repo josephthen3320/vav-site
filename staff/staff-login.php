@@ -8,8 +8,8 @@
 <title>Login &raquo; The Vis-à-Vis Organization</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../css/w3.css">
-<link rel="stylesheet" href="../css/color-theme.css">
+<link rel="stylesheet" href="http://static.josephthenara.com/vav-media/css/w3.css">
+<link rel="stylesheet" href="http://static.josephthenara.com/vav-media/css/color-theme.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
 <style>
