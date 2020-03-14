@@ -54,11 +54,11 @@
         </p>
         <form method="post" action="<?php echo htmlspecialchars($_SERVER["REQUEST_URI"]);?>">
             <div>
-                <input class="w3-input w3-large w3-padding-16 w3-round-medium" name="username" type="text" placeholder="username" maxlength="20" required>
-                <input class="w3-input w3-large w3-padding-16 w3-round-medium" name="password" type="password" placeholder="password" maxlength="20" required>
+                <input class="w3-input w3-medium w3-round-medium" name="username" type="text" placeholder="username" maxlength="20" required>
+                <input class="w3-input w3-medium w3-round-medium" name="password" type="password" placeholder="password" maxlength="20" required>
             </div>
             <br>
-            <button class="w3-button w3-bar-block w3-red w3-round-medium w3-large w3-hover-pink" style="width: 100%;" type="submit"><i class="fa fa-sign-in"></i> <b>Login</b></button>
+            <button class="w3-button w3-bar-block w3-red w3-round-medium w3-hover-pink" style="width: 100%;" type="submit"><i class="fa fa-sign-in"></i> <b>Login</b></button>
         </form>
         <p>Forgot your username/password?<br>Contact the site administrator.</p>
 
@@ -66,7 +66,7 @@
 
     </div>
     <div class="w3-bottom w3-panel w3-center">
-        <p class="w3-small">VAV Secure Login System v.1.0.1</p>
+        <p class="w3-small">VAV Secure Login System v.1.0.2</p>
     </div>
 
 
