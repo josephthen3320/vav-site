@@ -112,11 +112,11 @@
     </div>
 
     <!-- Navbar on small screens -->
-    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-        <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-        <a href="#dept" class="w3-bar-item w3-button" onclick="toggleFunction()">DEPARTMENTS</a>
-        <a href="#prog" class="w3-bar-item w3-button" onclick="toggleFunction()">PROGRAMMES</a>
-        <a href="staff/dashboard.php" class="w3-bar-item w3-button" onclick="toggleFunction()">STAFF AREA</a>
+    <div id="navDemo" class="w3-bar-block w3-theme-d3 w3-hide w3-hide-large w3-hide-medium">
+        <a href="#about" class="w3-bar-item w3-button w3-hover-theme" onclick="toggleFunction()">ABOUT</a>
+        <a href="#dept" class="w3-bar-item w3-button w3-hover-theme" onclick="toggleFunction()">DEPARTMENTS</a>
+        <a href="#prog" class="w3-bar-item w3-button w3-hover-theme" onclick="toggleFunction()">PROGRAMMES</a>
+        <a href="staff/dashboard.php" class="w3-bar-item w3-button w3-hover-theme" onclick="toggleFunction()">STAFF AREA</a>
 
     </div>
 </div>
