@@ -68,56 +68,42 @@
 
     </div>
 
+        <div class="w3-quarter w3-hide-small w3-hide-medium w3-padding-64"></div>
+        <div class="w3-half w3-container w3-theme-l4 w3-center w3-padding-64">
+            <h3 class="w3-center w3-text-theme w3-bar"><b>V-Dashboard</b></h3>
 
-<div class="w3-cell w3-container w3-center" style="width: 100%; margin: auto;"></div>
-    <div class="w3-threequarter w3-theme-l4 w3-padding-64 w3-cell-middle w3-center w3-container" style="margin: auto;">
-        <h5 class="w3-center"><span class="w3-theme w3-wide w3-tag">Website Inbox</span></h5>
-        <br>
-        <div class="w3-col w3-container w3-hide-small w3-hide-medium" style="width: 5%;"></div>
-        <div class="w3-center w3-col w3-container">
-            <table class="w3-table-all w3-centered" style="width: 100%; table-layout: fixed; word-wrap: break-word;">
-                <tr>
-                    <th class="w3-center" style="width: 10%;">
-                        #
-                    </th>
-                    <th class="w3-center">
-                        Name
-                    </th>
-                    <th class="w3-center">
-                        Email Address
-                    </th>
-                    <th class="w3-center" style="width: 40%;">
-                        Message Content
-                    </th>
-                    <th class="w3-center">
-                        Operations
-                    </th>
-                </tr>
-                <?php
-                    $msg_no         =   0;
+            <div>
+                <h6 class="w3-center w3-bar"><span class="w3-theme-d3 w3-wide w3-tag">Website Inbox</span></h6>
 
-                    $inbox_query    =   "SELECT * FROM messages";
-                    $inbox_result   =   $conn->query($inbox_query);
-
-                    while ($row = $inbox_result->fetch_array()) {
-                        $msg_no ++;
-                        echo "<tr>
-                                    <td>$msg_no</td>
-                                    <td>$row[msg_name]</td>
-                                    <td><a href='mailto:$row[msg_email]'>$row[msg_email]</a></td>
-                                    <td>$row[msg_content]</td>
-                               </tr>";
-
-                    }
-                ?>
-            </table>
+                <table class="w3-table-all w3-centered" style="width: 100%;">
+                    <tr>
+                        <td colspan="4" class="w3-theme"><b>Message List</b></td>
+                    </tr>
+                    <tr>
+                        <th class="w3-center" style="width: 10%;">
+                            <h6><b>#</b></h6>
+                        </th>
+                        <th class="w3-center" style="width: 25%;">
+                            <h6><b>Name</b></h6>
+                        </th>
+                        <th class="w3-center" style="width: 50%;">
+                            <h6><b>Message Content</b></h6>
+                        </th>
+                        <th class="w3-center" style="width: 15%;">
+                            <h6><b>Operations</b></h6>
+                        </th>
+                    </tr>
+                    <?php include ('php/load-inbox.php'); ?>
+                </table>
+            </div>
         </div>
-        <div class="w3-col w3-container w3-hide-small w3-hide-medium" style="width: 5%;"></div>
+        <div class="w3-quarter w3-hide-small w3-hide-medium w3-padding-64"></div>
 
-        <br><br>
     </div>
 
-
+    <div class="w3-display-container w3-bar w3-theme-d5 w3-center">
+        <p>VAV Website Inbox System v.1.1.0</p>
+    </div>
 
 </body>
 </html>
