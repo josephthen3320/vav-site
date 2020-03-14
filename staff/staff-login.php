@@ -28,23 +28,13 @@
     .menu {
         display: none;
     }
-
-    #login-form {
-        width: 30%;           /* Set this to your convenience */
-        height: 60%;          /* Set this to your convenience */
-        position: absolute;
-        top: 30%;
-        left: 42.5%;
-        margin-top: -100px;     /* Half of height */
-        margin-left: -150px;     /* Half of width */
-    }
 </style>
 
 <body class="w3-theme-d5 w3-display-container">
 
     <div class="w3-center w3-display-middle">
         <a href="../">
-            <img src="img/vav_web_logo.svg" height="100">
+            <img src="http://static.josephthenara.com/vav-media/img/attribute/vav_web_logo.svg" height="100">
         </a>
         <p class="w3-center">
             <em>Making connections, starting with the server</em><br />
