@@ -1,6 +1,5 @@
 <?php
 
-
     $username = $login_err = "";
     // If form submitted, insert values into the database.
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
