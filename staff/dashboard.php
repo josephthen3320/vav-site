@@ -88,14 +88,14 @@
                     <div class="w3-display-container">
                         <img src="<?php echo $username.'.jpg'; ?>" style="width:100%" alt="Avatar">
                         <div class="w3-display-bottomleft w3-container w3-text-white w3-bar w3-theme">
-                            <h2><?php echo "$staff_firstname $staff_lastname"; ?></h2>
+                            <h2><?php echo "$staff_firstname $staff_lastname $gender_icon"; ?></h2>
                         </div>
                     </div>
                     <div class="w3-container">
-                        <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Designer</p>
-                        <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>London, UK</p>
-                        <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>ex@mail.com</p>
-                        <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>1224435534</p>
+                        <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-large w3-text-theme"></i><?php echo "  $dob_convert"; ?></p>
+                        <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-theme"></i><?php echo "B$staff_roomno"; ?></p>
+                        <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-theme"></i><?php echo "$staff_email"; ?></p>
+                        <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-theme"></i><?php echo "$staff_phone"; ?></p>
                         <hr>
 
                         <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
@@ -189,6 +189,9 @@
         </div>
     </div>
 
+    <div class="w3-display-container w3-bar w3-theme-d5 w3-center">
+        <p>VAV Website Dashboard System v.1.0.0</p>
+    </div>
 </body>
 </html>
 
