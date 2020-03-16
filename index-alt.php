@@ -19,13 +19,16 @@
 
     .bgimg {
         background-position: center;
-        background-size: cover;
         background-image: url("http://static.josephthenara.com/vav-media/img/homepage/bg_01.jpg");
         min-height: 75%;
     }
 
     .menu {
         display: none;
+    }
+
+    .fill-screen {
+        height: 100%;
     }
 </style>
 
