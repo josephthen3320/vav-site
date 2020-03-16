@@ -86,13 +86,13 @@
 
                 <div class="w3-white w3-text-grey w3-card-4">
                     <div class="w3-display-container">
-                        <img src="<?php echo $username.'.jpg'; ?>" style="width:100%" alt="Avatar">
+                        <img src="http://static.josephthenara.com/vav-media/img/profile-picture/<?php echo $username.'.jpg'; ?>" style="width:100%" alt="Avatar">
                         <div class="w3-display-bottomleft w3-container w3-text-white w3-bar w3-theme">
                             <h2><?php echo "$staff_firstname $staff_lastname $gender_icon"; ?></h2>
                         </div>
                     </div>
                     <div class="w3-container">
-                        <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-large w3-text-theme"></i><?php echo "  $dob_convert"; ?></p>
+                        <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-large w3-text-theme"></i><?php echo "$dob_convert"; ?></p>
                         <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-theme"></i><?php echo "B$staff_roomno"; ?></p>
                         <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-theme"></i><?php echo "$staff_email"; ?></p>
                         <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-theme"></i><?php echo "$staff_phone"; ?></p>

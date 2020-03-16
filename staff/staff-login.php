@@ -17,17 +17,6 @@
         height: 100%;
         font-family: "Inconsolata", sans-serif;
     }
-
-    .bgimg {
-        background-position: center;
-        background-size: cover;
-        background-image: url("/img/bg01.jpg");
-        min-height: 75%;
-    }
-
-    .menu {
-        display: none;
-    }
 </style>
 
 <body class="w3-theme-d5 w3-display-container">
@@ -51,15 +40,11 @@
             <button class="w3-button w3-bar-block w3-red w3-round-medium w3-hover-pink" style="width: 100%;" type="submit"><i class="fa fa-sign-in"></i> <b>Login</b></button>
         </form>
         <p>Forgot your username/password?<br>Contact the site administrator.</p>
-
-
-
     </div>
+
     <div class="w3-bottom w3-panel w3-center">
         <p class="w3-small">VAV Secure Login System v.1.0.4</p>
     </div>
-
-
 
 </body>
 </html>
