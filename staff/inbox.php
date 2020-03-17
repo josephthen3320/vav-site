@@ -106,7 +106,7 @@
                 <a href="../index.php">
                     <img class="w3-image" style="width: 120px;" src="http://static.josephthenara.com/vav-media/img/attribute/vav_web_logo.svg">
                 </a>
-                <h6>Vis-a-Vis Organisation</h6>
+                <h6>Vis-à-Vis Organisation</h6>
                 <h5 class="w3-center w3-bar-item w3-theme"><b>Mailbox</b></h5>
             </div>
             <hr />
@@ -141,7 +141,7 @@
     </div>
 </div>
 
-<!-- Content -->
+<!-- Site Content -->
     <div style="margin-left: 15%;" class="w3-animate-right" id="mainContent">
     <!-- Top Navbar -->
         <div class="w3-bar w3-theme-d5">
@@ -156,53 +156,69 @@
                 <i class="fa fa-angle-right w3-small"></i>
             </div>
         </div>
+
     <!-- Header -->
         <div class="w3-bar w3-theme">
             <div class="w3-bar-item">
-            <h3>Mailbox</h3>
+                <h3>Mailbox</h3>
             </div>
         </div>
-    <!-- Main Content -->
-        <div class="w3-quarter w3-bar-block w3-theme-l4">
-        <!-- Compose Button -->
-            <div class="w3-bar-item w3-center">
-                <div class="w3-button w3-panel w3-2019-eden w3-round w3-hover-green" style="width: 75%;">
-                    <h6>Compose Message | <i class="fa fa-fw fa-edit"></i> </h6>
-                </div>
-            </div>
-        <!-- Other Buttons -->
-            <div class="w3-bar-item w3-button w3-theme-l1">
-                <h6><i class="fa fa-fw fa-inbox"></i> <b>Inbox </b>[<?php echo "$msg_total_count"; ?>]</h6>
-            </div>
-            <div class="w3-bar-item w3-button w3-theme">
-                <h6><i class="fa fa-fw fa-envelope"></i> <b>Unread </b>[<?php echo "$msg_total_unread"; ?>]</h6>
-            </div>
-            <div class="w3-bar-item w3-button w3-theme-l1">
-                <h6><i class="fa fa-fw fa-envelope-open"></i> <b>Read </b>[<?php echo "$msg_total_read"; ?>]</h6>
-            </div>
-            <div class="w3-bar-item w3-button w3-theme">
-                <h6><i class="fa fa-fw fa-trash"></i> <b>Trash </b>[<?php echo "$msg_total_trash"; ?>]</h6>
-            </div>
 
+    <!-- Main Content -->
+        <div class="">
+            <div class="w3-quarter w3-bar-block w3-theme-l4">
+            <!-- Compose Button -->
+                <div class="w3-bar-item w3-center">
+                    <div class="w3-button w3-panel w3-2019-eden w3-round w3-hover-green" style="width: 75%;">
+                        <h6>Compose Message | <i class="fa fa-fw fa-edit"></i> </h6>
+                    </div>
+                </div>
+            <!-- Other Buttons -->
+                <div class="w3-bar-item w3-button w3-theme-l1">
+                    <h6><i class="fa fa-fw fa-inbox"></i> <b>Inbox </b>[<?php echo "$msg_total_count"; ?>]</h6>
+                </div>
+                <div class="w3-bar-item w3-button w3-theme">
+                    <h6><i class="fa fa-fw fa-envelope"></i> <b>Unread </b>[<?php echo "$msg_total_unread"; ?>]</h6>
+                </div>
+                <div class="w3-bar-item w3-button w3-theme-l1">
+                    <h6><i class="fa fa-fw fa-envelope-open"></i> <b>Read </b>[<?php echo "$msg_total_read"; ?>]</h6>
+                </div>
+                <div class="w3-bar-item w3-button w3-theme">
+                    <h6><i class="fa fa-fw fa-trash"></i> <b>Trash </b>[<?php echo "$msg_total_trash"; ?>]</h6>
+                </div>
+
+            </div>
+            <div class="w3-threequarter w3-theme-l5">
+                <table class="w3-table-all  w3-centered" style="width: 100%;">
+                    <tr class="w3-theme-d1">
+                        <th class="w3-center" style="width: 10%;">
+                            <h6><b>#</b></h6>
+                        </th>
+                        <th class="w3-center" style="width: 25%;">
+                            <h6><b>Name</b></h6>
+                        </th>
+                        <th class="w3-center" style="width: 50%;">
+                            <h6><b>Message Content</b></h6>
+                        </th>
+                        <th class="w3-center" style="width: 15%;">
+                            <h6><b>Operations</b></h6>
+                        </th>
+                    </tr>
+                    <?php include ('php/load-inbox.php'); ?>
+                </table>
+                <br><br>
+            </div>
         </div>
-        <div class="w3-threequarter w3-theme-l5">
-            <table class="w3-table-all  w3-centered" style="width: 100%;">
-                <tr class="w3-theme-d1">
-                    <th class="w3-center" style="width: 10%;">
-                        <h6><b>#</b></h6>
-                    </th>
-                    <th class="w3-center" style="width: 25%;">
-                        <h6><b>Name</b></h6>
-                    </th>
-                    <th class="w3-center" style="width: 50%;">
-                        <h6><b>Message Content</b></h6>
-                    </th>
-                    <th class="w3-center" style="width: 15%;">
-                        <h6><b>Operations</b></h6>
-                    </th>
-                </tr>
-                <?php include ('php/load-inbox.php'); ?>
-            </table>
+    </div>
+
+    <!-- Footer only in small screens -->
+    <div class="w3-hide-large w3-hide-medium w3-center w3-padding-64 w3-theme-d5 w3-bar">
+        <div class="w3-theme-d5>
+            <a href="../">
+                <img src="http://static.josephthenara.com/vav-media/img/attribute/vav_web_logo.svg" height="50">
+            </a>
+            <p>Vis-à-Vis Organisation</p>
+            <p class="w3-small w3-panel w3-theme-l1">VAV Mailbox System v.2.0.0</p>
         </div>
     </div>
 

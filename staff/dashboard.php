@@ -50,7 +50,7 @@
                     <img class="w3-image" style="width: 120px;" src="http://static.josephthenara.com/vav-media/img/attribute/vav_web_logo.svg">
                 </a>
 
-                <h6>Vis-a-Vis Organisation</h6>
+                <h6>Vis-à-Vis Organisation</h6>
                 <h5 class="w3-center w3-bar-item w3-theme"><b>Dashboard</b></h5>
             </div>
             <hr />
@@ -100,7 +100,6 @@
                 <i class="fa fa-angle-right w3-small"></i>
                 <i class="fa fa-angle-right w3-small"></i>
             </div>
-
         </div>
 
     <!-- Header -->
@@ -109,7 +108,6 @@
                 <h3>Dashboard</h3>
             </div>
         </div>
-
 
     <!-- Content -->
         <div class="">
@@ -120,8 +118,12 @@
     </div>
 
     <!-- Footer only in small screens -->
-    <div class="w3-hide-large w3-hide-medium w3-theme-d5 w3-center w3-bar">
-        <p class="w3-small">VAV Dashboard System v.2.1.1</p>
+    <div class="w3-hide-large w3-hide-medium w3-theme-d5 w3-center w3-padding-64 w3-bar">
+        <a href="../">
+            <img src="http://static.josephthenara.com/vav-media/img/attribute/vav_web_logo.svg" height="50">
+        </a>
+        <p>Vis-à-Vis Organisation</p>
+        <p class="w3-small w3-panel w3-theme-l1">VAV Dashboard System v.2.1.1</p>
     </div>
 
 </body>
