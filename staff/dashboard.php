@@ -34,7 +34,8 @@
         var fHeight = window.innerHeight;
         var xx      = document.getElementById("mainContent");
         if (fWidth < 993) {
-            xx.style.marginLeft = "0%";
+            xx.style.marginLeft =   "0%";
+            xx.className        +=  "w3-padding-32";
         }
     }
 </script>
@@ -64,16 +65,30 @@
 
             <hr />
             <div class="w3-bar-item w3-center">
-                <p class="w3-small">VAV Dashboard System v.2.1.0</p>
+                <p class="w3-small">VAV Dashboard System v.2.1.1</p>
             </div>
 
+        </div>
+    </div>
+
+<!-- Top Navbar on small screens -->
+    <div class="w3-top w3-hide-large w3-hide-medium w3-bar w3-display-container w3-theme-d5 w3-large" id="myNavbar">
+        <a href="#" class="w3-bar-item w3-button w3-theme"><i class="fa fa-fw fa-home"></i> Dashboard</a>
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div class="w3-bar-block w3-hide w3-hide-large w3-hide-medium" id="navDemo">
+            <a href="calendar.php" class="w3-bar-item w3-button w3-hover-theme"><i class="fa fa-fw fa-calendar"></i> Calendar</a>
+            <a href="inbox.php" class="w3-bar-item w3-button w3-hover-theme"><i class="fa fa-fw fa-envelope"></i> Mailbox</a>
+            <a href="toolbox.php" class="w3-bar-item w3-button w3-hover-theme"><i class="fa fa-fw fa-tools"></i> Toolbox</a>
+            <a href="php/logout.php" class="w3-bar-item w3-button w3-hover-red"><i class="fa fa-fw fa-sign-out-alt"></i> Logout</a>
         </div>
     </div>
 
 <!-- Site Content -->
     <div class="" style="margin-left: 15%;" id="mainContent">
     <!-- Top Navbar -->
-        <div class="w3-bar w3-theme-d5 w3-animate-right">
+        <div class="w3-bar-block w3-theme-d5 w3-animate-right w3-hide-small">
             <div class="w3-bar-item">
                 <a href="dashboard.php" class="w3-text-white w3-hover-text-light-blue"><i class="fa fa-home"></i></a>
                 <i class="fa fa-angle-right w3-small"></i>
@@ -104,7 +119,10 @@
         </div>
     </div>
 
-
+    <!-- Footer only in small screens -->
+    <div class="w3-hide-large w3-hide-medium w3-theme-d5 w3-center w3-bar">
+        <p class="w3-small">VAV Dashboard System v.2.1.1</p>
+    </div>
 
 </body>
 </html>
@@ -112,11 +130,11 @@
 <script>
     // Used to toggle the menu on small screens when clicking on the menu button
     function toggleFunction() {
-        var x = document.getElementById("sideNav");
-        if (x.className.indexOf("w3-hide") == -1) {
-            x.className += " w3-hide";
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
         } else {
-            x.className = x.className.replace(" w3-hide", "");
+            x.className = x.className.replace(" w3-show", "");
         }
     }
 </script>

@@ -92,7 +92,8 @@
         var fHeight = window.innerHeight;
         var xx      = document.getElementById("mainContent");
         if (fWidth < 993) {
-            xx.style.marginLeft = "0%";
+            xx.style.marginLeft =   "0%";
+            xx.className        +=  "w3-padding-32";
         }
     }
 </script>
@@ -125,6 +126,20 @@
 
         </div>
     </div>
+
+<!-- Top Navbar on small screens -->
+<div class="w3-top w3-hide-large w3-hide-medium w3-bar w3-display-container w3-theme-d5 w3-large" id="myNavbar">
+    <a href="dashboard.php" class="w3-bar-item w3-button w3-hover-theme"><i class="fa fa-fw fa-home"></i> Dashboard</a>
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+    </a>
+    <div class="w3-bar-block w3-hide w3-hide-large w3-hide-medium" id="navDemo">
+        <a href="calendar.php" class="w3-bar-item w3-button w3-hover-theme"><i class="fa fa-fw fa-calendar"></i> Calendar</a>
+        <a href="#" class="w3-bar-item w3-button w3-theme w3-hover-theme"><i class="fa fa-fw fa-envelope"></i> Mailbox</a>
+        <a href="toolbox.php" class="w3-bar-item w3-button w3-hover-theme"><i class="fa fa-fw fa-tools"></i> Toolbox</a>
+        <a href="php/logout.php" class="w3-bar-item w3-button w3-hover-red"><i class="fa fa-fw fa-sign-out-alt"></i> Logout</a>
+    </div>
+</div>
 
 <!-- Content -->
     <div style="margin-left: 15%;" class="w3-animate-right" id="mainContent">
