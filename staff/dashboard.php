@@ -33,7 +33,6 @@
 <!-- Side Navbar -->
     <div>
         <div class="w3-sidebar w3-theme-d5 w3-bar-block w3-padding-32 w3-animate-left w3-display-container" style="width: 15%;">
-            <hr />
             <div class="w3-display-container w3-center w3-bar-item">
                 <a href="../index.php">
                     <img class="w3-image" style="width: 120px;" src="http://static.josephthenara.com/vav-media/img/attribute/vav_web_logo.svg">
@@ -50,7 +49,7 @@
 
                 <hr />
                 <a href="" class="w3-bar-item w3-button w3-hover-theme"><i class="fa fa-fw fa-user"></i> Profile</a>
-                <a href="php/logout.php" class="w3-bar-item w3-button w3-right w3-hover-red"><i class="fa fa-sign-out-alt"></i> Logout</a>
+                <a href="php/logout.php" class="w3-bar-item w3-button w3-right w3-hover-red"><i class="fa fa-fw fa-sign-out-alt"></i> Logout</a>
 
             <hr />
             <div class="w3-bar-item">
@@ -69,7 +68,7 @@
                 <i class="fa fa-angle-right w3-small"></i>
                 <b><?php echo "$staff_en_name"; ?></b>
                 <i class="fa fa-angle-right w3-small"></i>
-                <a href="" style="text-decoration: none" class="w3-text-white w3-hover-text-light-blue"><b>Dashboard</b></a>
+                <a href="#" style="text-decoration: none" class="w3-text-white w3-hover-text-light-blue"><b>Dashboard</b></a>
                 <i class="fa fa-angle-right w3-small"></i>
                 <i class="fa fa-angle-right w3-small"></i>
                 <i class="fa fa-angle-right w3-small"></i>
