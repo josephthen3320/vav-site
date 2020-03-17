@@ -86,15 +86,25 @@
     {color:#fff;background-color:#797B3A}
 </style>
 
-<body class="w3-theme-l5">
+<script>
+    function detectFrameSize() {
+        var fWidth  = window.innerWidth;
+        var fHeight = window.innerHeight;
+        var xx      = document.getElementById("mainContent");
+        if (fWidth < 993) {
+            xx.style.marginLeft = "0%";
+        }
+    }
+</script>
+
+<body class="w3-theme-l5" onload="detectFrameSize()">
 <!-- Side Navbar -->
-    <div>
-        <div class="w3-sidebar w3-theme-d5 w3-bar-block w3-padding-32 w3-animate-left w3-display-container" style="width: 15%;">
+    <div class="w3-hide-small">
+        <div class="w3-sidebar w3-theme-d5 w3-bar-block w3-padding-32 w3-animate-left w3-display-container w3-container" style="z-index:3; width: 15%;">
             <div class="w3-display-container w3-center w3-bar-item">
                 <a href="../index.php">
                     <img class="w3-image" style="width: 120px;" src="http://static.josephthenara.com/vav-media/img/attribute/vav_web_logo.svg">
                 </a>
-
                 <h6>Vis-a-Vis Organisation</h6>
                 <h5 class="w3-center w3-bar-item w3-theme"><b>Mailbox</b></h5>
             </div>
@@ -117,7 +127,7 @@
     </div>
 
 <!-- Content -->
-    <div style="margin-left: 15%;" class="w3-animate-right">
+    <div style="margin-left: 15%;" class="w3-animate-right" id="mainContent">
     <!-- Top Navbar -->
         <div class="w3-bar w3-theme-d5">
             <div class="w3-bar-item">

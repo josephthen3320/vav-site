@@ -28,10 +28,21 @@
     }
 </style>
 
-<body class="w3-theme-l5">
+<script>
+    function detectFrameSize() {
+        var fWidth  = window.innerWidth;
+        var fHeight = window.innerHeight;
+        var xx      = document.getElementById("mainContent");
+        if (fWidth < 993) {
+            xx.style.marginLeft = "0%";
+        }
+    }
+</script>
+
+<body class="w3-theme-l5" onload="detectFrameSize()">
 
 <!-- Side Navbar -->
-    <div>
+    <div class="w3-hide-small" id="sideNav">
         <div class="w3-sidebar w3-theme-d5 w3-bar-block w3-padding-32 w3-animate-left w3-display-container" style="width: 15%;">
             <div class="w3-display-container w3-center w3-bar-item">
                 <a href="../index.php">
@@ -47,20 +58,20 @@
             <a href="inbox.php" class="w3-bar-item w3-button w3-hover-theme"><i class="fa fa-fw fa-envelope w3-align-left"></i> Mailbox</a>
             <a href="toolbox.php" class="w3-bar-item w3-button w3-hover-theme"><i class="fa fa-fw fa-tools"></i> Toolbox</a>
 
-                <hr />
-                <a href="" class="w3-bar-item w3-button w3-hover-theme"><i class="fa fa-fw fa-user"></i> Profile</a>
-                <a href="php/logout.php" class="w3-bar-item w3-button w3-right w3-hover-red"><i class="fa fa-fw fa-sign-out-alt"></i> Logout</a>
+            <hr />
+            <a href="" class="w3-bar-item w3-button w3-hover-theme"><i class="fa fa-fw fa-user"></i> Profile</a>
+            <a href="php/logout.php" class="w3-bar-item w3-button w3-hover-red"><i class="fa fa-fw fa-sign-out-alt"></i> Logout</a>
 
             <hr />
-            <div class="w3-bar-item">
-                <p class="w3-small">VAV Dashboard System v.2.0.0</p>
+            <div class="w3-bar-item w3-center">
+                <p class="w3-small">VAV Dashboard System v.2.1.0</p>
             </div>
 
         </div>
     </div>
 
 <!-- Site Content -->
-    <div class="" style="margin-left: 15%;">
+    <div class="" style="margin-left: 15%;" id="mainContent">
     <!-- Top Navbar -->
         <div class="w3-bar w3-theme-d5 w3-animate-right">
             <div class="w3-bar-item">
@@ -76,6 +87,14 @@
             </div>
 
         </div>
+
+    <!-- Header -->
+        <div class="w3-bar w3-theme">
+            <div class="w3-bar-item">
+                <h3>Dashboard</h3>
+            </div>
+        </div>
+
 
     <!-- Content -->
         <div class="">
@@ -93,11 +112,11 @@
 <script>
     // Used to toggle the menu on small screens when clicking on the menu button
     function toggleFunction() {
-        var x = document.getElementById("navDemo");
-        if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
+        var x = document.getElementById("sideNav");
+        if (x.className.indexOf("w3-hide") == -1) {
+            x.className += " w3-hide";
         } else {
-            x.className = x.className.replace(" w3-show", "");
+            x.className = x.className.replace(" w3-hide", "");
         }
     }
 </script>
