@@ -19,7 +19,7 @@
     }
 </style>
 
-<body class="w3-theme-d5 w3-display-container">
+<body class="w3-theme-d5 w3-display-container w3-animate-zoom">
 
     <div class="w3-center w3-display-middle">
         <a href="../">
@@ -43,7 +43,7 @@
     </div>
 
     <div class="w3-bottom w3-panel w3-center">
-        <p class="w3-small">VAV Secure Login System v.1.0.4</p>
+        <p class="w3-small">VAV Secure Login System v.1.0.5</p>
     </div>
 
 </body>

@@ -15,39 +15,37 @@
 <style>
     body, html {
         height: 100%;
-        font-family: "Inconsolata", "Hiragino Sans GB", "Microsoft Yahei UI","微软雅黑", sans-serif;
+        font-family: "Inconsolata", sans-serif;
     }
 </style>
 
 <body class="w3-theme-l5">
-<!-- Side Navbar -->
-    <div>
-        <div class="w3-sidebar w3-theme-d5 w3-bar-block w3-padding-32 w3-animate-left w3-display-container" style="width: 15%;">
-            <hr />
-            <div class="w3-display-container w3-center w3-bar-item">
-                <a href="../index.php">
-                    <img class="w3-image" style="width: 120px;" src="http://static.josephthenara.com/vav-media/img/attribute/vav_web_logo.svg">
-                </a>
+    <!-- Navbar -->
+    <div class="w3-theme-d5">
+        <!-- Navbar on large screens -->
+        <div class="w3-bar w3-display-container" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
 
-                <h6>Vis-a-Vis Organisation</h6>
-                <h5 class="w3-center w3-bar-item w3-theme"><b>Mailbox</b></h5>
+            <a href="dashboard.php" class="w3-bar-item w3-button w3-left w3-hover-theme"><i class="fa fa-home"></i> DASHBOARD</a>
+            <a href="#" class="w3-bar-item w3-button w3-theme w3-hide-small w3-hide-medium"><i class="fa fa-envelope"></i> INBOX</a>
+            <a href="toolbox.php" class="w3-bar-item w3-button w3-hover-theme w3-hide-small w3-hide-medium"><i class="fa fa-archive"></i> TOOL BOX</a>
+            <?php include ('modular/staff-su-header-auth.php'); ?>
+
+            <div class="w3-bar-item w3-display-middle">VAV Dashboard | <?php echo "$username"; ?></div>
+            <div class="w3-right w3-hide-small w3-hide-medium">
+                <a href="php/logout.php" class="w3-bar-item w3-button w3-hover-red w3-hide-small w3-hide-medium">Log Out <i class="fa fa-sign-out-alt"></i></a>
             </div>
-            <hr />
-            <a href="dashboard.php" class="w3-bar-item w3-button w3-hover-theme"><i class="fa fa-fw fa-tachometer-alt"></i> Dashboard</a>
-            <a href="calendar.php" class="w3-bar-item w3-button w3-hover-theme"><i class="fa fa-fw fa-calendar"></i> Calendar</a>
-            <a href="#" class="w3-bar-item w3-button w3-hover-theme"><i class="fa fa-fw fa-envelope w3-align-left"></i> Mailbox</a>
-            <a href="toolbox.php" class="w3-bar-item w3-button w3-hover-theme"><i class="fa fa-fw fa-tools"></i> Toolbox</a>
-
-            <hr />
-            <a href="" class="w3-bar-item w3-button w3-hover-theme"><i class="fa fa-fw fa-user"></i> Profile</a>
-            <a href="php/logout.php" class="w3-bar-item w3-button w3-right w3-hover-red"><i class="fa fa-sign-out-alt"></i> Logout</a>
-
-            <hr />
-            <div class="w3-bar-item">
-                <p class="w3-small">VAV Dashboard System v.1.0.0</p>
-            </div>
-
         </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-theme-d1 w3-hide w3-hide-large w3-hide-medium">
+            <a href="inbox.php" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-envelope"></i> INBOX</a>
+            <a href="toolbox.php" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-archive"></i> TOOL BOX</a>
+            <a href="php/logout.php" class="w3-bar-item w3-button w3-hover-red" onclick="toggleFunction()"><i class="fa fa-sign-out-alt"></i> LOG OUT</a>
+        </div>
+
     </div>
 
         <div class="w3-quarter w3-hide-small w3-hide-medium w3-padding-64"></div>

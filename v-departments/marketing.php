@@ -75,7 +75,7 @@
             <p class="w3-center w3-large">Promotions and Branding</p>
             <img class="w3-image" src="../img/dept/Mkt.jpg" width="75%">
             <br><br>
-            <p class="w3-left-align">The Marketing department mainly aims to establish an increasingly influential branding for VAV.
+            <p class="w3-centered">The Marketing department mainly aims to establish an increasingly influential branding for VAV.
                 The main function of this department is to come up with good ideas to promote VAV projects, activities
                 and events. We also strive to encourage students to participate in the various events in UNNC.</p>
         </div>

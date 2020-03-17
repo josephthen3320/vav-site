@@ -27,6 +27,10 @@
     .menu {
         display: none;
     }
+
+    .full-screen{
+        height: 100%;
+    }
 </style>
 
 <php>
@@ -122,7 +126,7 @@
 </div>
 
 <!-- Header with image -->
-<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+<header class="bgimg w3-display-container w3-grayscale-min full-screen" id="home">
     <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
         <span class="w3-tag">An organization of The University of Nottingham Ningbo China</span>
     </div>
