@@ -97,11 +97,11 @@
     ?>
 </php>
 
-<body>
+<body class="w3-theme-l5">
 
 <!-- Links (sit on top) -->
 
-<div class="w3-top">
+<div class="w3-top w3-medium">
     <div class="w3-bar w3-theme-d5 w3-card w3-animate-top" id="myNavbar">
 
         <a class="w3-bar-item w3-button w3-hover-theme w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
@@ -143,11 +143,11 @@
 </header>
 
 <!-- Add a background color and large text to the whole page -->
-<div class="w3-theme-l5 w3-large">
+<div class="w3-large">
 
-    <!-- About Container -->
+<!-- About Container -->
     <div class="w3-container" id="about">
-        <div class="w3-content" style="max-width:700px"
+        <div class="w3-content" style="max-width:700px">
         <br>
             <h4 class="w3-center w3-padding-64"><span class="w3-tag w3-wide w3-theme-l1">ABOUT VAV</span></h4>
             <h4><strong class="w3-text-theme">Vis-à-Vis</strong> -prep. /ˌvēzəˈvē/</h4><h6>- from French</h6>
@@ -169,98 +169,266 @@
         </div>
     </div>
 
-    <!-- Department Section -->
-    <div class="w3-container" style="padding:128px 16px" id="dept">
+<!-- Department Section -->
+    <div class="w3-container" style="padding:128px 16px;" id="dept">
+
         <h4 class="w3-center"><span class="w3-tag w3-wide w3-theme-l1">DEPARTMENTS</span></h4>
         <p class="w3-center w3-large">The people who manage VAV</p>
 
-        <div class="w3-row-padding" style="margin-top:64px">
-            <div class="w3-quarter l2 m6 w3-margin-bottom">
-                <div class="w3-card">
-                    <img src="http://static.josephthenara.com/vav-media/img/department/Marketing_01.jpg" alt="marketing" style="width:100%">
-                    <div class="w3-container">
-                        <h3>Marketing (MKT)</h3>
-                        <p class="w3-opacity">Monika & Sia</p>
-                        <p>
-                            Establishing an influential branding for VAV through effective marketing.<br><br>
-                        </p>
-                        <p><a href="v-departments/marketing.php" class="w3-button w3-light-grey w3-block"><i class="fa fa-share"></i> Learn more</a></p>
+    <!-- Department buttons -->
+        <div class="w3-row-padding" style="margin-top: 64px">
+
+            <!-- Marketing -->
+                <div class="w3-third w3-margin-bottom">
+                    <div class="w3-display-container w3-card" style="width: 100%;">
+                        <a href="v-departments/marketing.php" class="w3-hover-opacity">
+                            <img class="w3-round" src="http://static.josephthenara.com/vav-media/img/department/Marketing_01.jpg" width="100%">
+                            <h4 class="w3-display-bottommiddle w3-center w3-display-hover w3-theme w3-bar w3-panel w3-hide-small">MARKETING</h4>
+                            <h5 class="w3-display-bottommiddle w3-center w3-theme w3-bar w3-panel w3-hide-large w3-hide-medium">MARKETING</h5>
+                        </a>
+                        
+                    </div>
+                </div>
+
+            <!-- Infotech -->
+                <div class="w3-third w3-margin-bottom">
+                    <div class="w3-display-container w3-card" style="width: 100%;">
+                        <a href="v-departments/marketing.php" class="w3-hover-opacity">
+                            <img class="w3-round" src="http://static.josephthenara.com/vav-media/img/department/InfoTech_01.jpg" width="100%">
+                            <h4 class="w3-display-bottommiddle w3-center w3-display-hover w3-theme w3-bar w3-panel w3-hide-small">INFORMATION TECHNOLOGY</h4>
+                            <h5 class="w3-display-bottommiddle w3-center w3-theme w3-bar w3-panel w3-hide-large w3-hide-medium">INFORMATION TECHNOLOGY</h5>
+                        </a>
+                        
+                    </div>
+                </div>
+
+            <!-- Human Resources -->
+                <div class="w3-third w3-margin-bottom">
+                    <div class="w3-display-container w3-card" style="width: 100%;">
+                        <a href="v-departments/marketing.php" class="w3-hover-opacity">
+                            <img class="w3-round" src="http://static.josephthenara.com/vav-media/img/department/HumanResources_01.jpg" width="100%">
+                            <h4 class="w3-display-bottommiddle w3-center w3-display-hover w3-theme w3-bar w3-panel w3-hide-small">HUMAN RESOURCES</h4>
+                            <h5 class="w3-display-bottommiddle w3-center w3-theme w3-bar w3-panel w3-hide-large w3-hide-medium">HUMAN RESOURCES</h5>
+                        </a>
+                        
+                    </div>
+                </div>
+
+            <!-- Secretary -->
+                <div class="w3-third w3-margin-bottom">
+                    <div class="w3-display-container w3-card" style="width: 100%;">
+                        <a href="v-departments/marketing.php" class="w3-hover-opacity">
+                            <img class="w3-round" src="http://static.josephthenara.com/vav-media/img/department/Secretary_01.jpg" width="100%">
+                            <h4 class="w3-display-bottommiddle w3-center w3-display-hover w3-theme w3-bar w3-panel w3-hide-small">SECRETARY</h4>
+                            <h5 class="w3-display-bottommiddle w3-center w3-theme w3-bar w3-panel w3-hide-large w3-hide-medium">SECRETARY</h5>
+                        </a>
+                        
+                    </div>
+                </div>
+
+            <!-- Finance -->
+                <div class="w3-third w3-margin-bottom">
+                    <div class="w3-display-container w3-card" style="width: 100%;">
+                        <a href="v-departments/marketing.php" class="w3-hover-opacity">
+                            <img class="w3-round" src="http://static.josephthenara.com/vav-media/img/department/Finance_01.jpg" width="100%">
+                            <h4 class="w3-display-bottommiddle w3-center w3-display-hover w3-theme w3-bar w3-panel w3-hide-small">FINANCE</h4>
+                            <h5 class="w3-display-bottommiddle w3-center w3-theme w3-bar w3-panel w3-hide-large w3-hide-medium">FINANCE</h5>
+                        </a>
+                        
+                    </div>
+                </div>
+
+            <!-- President Team -->
+                <div class="w3-third w3-margin-bottom">
+                    <div class="w3-display-container w3-card" style="width: 100%;">
+                        <a href="v-departments/marketing.php" class="w3-hover-opacity">
+                            <img class="w3-round" src="http://static.josephthenara.com/vav-media/img/department/PresidentTeam_01.jpg" width="100%">
+                            <h4 class="w3-display-bottommiddle w3-center w3-display-hover w3-theme w3-bar w3-panel w3-hide-small">PRESIDENT TEAM</h4>
+                            <h5 class="w3-display-bottommiddle w3-center w3-theme w3-bar w3-panel w3-hide-large w3-hide-medium">PRESIDENT TEAM</h5>
+                        </a>
+                        
+                    </div>
+                </div>
+                <!--div class="w3-card w3-theme-l1 w3-hover-theme w3-button w3-round-large" style="width: 100%;">
+                    <h2 class="w3-hide-small w3-hide-medium">INFORMATION TECHNOLOGY</h2>
+                    <h2 class="w3-hide-large">IT</h2>
+                </div-->
+            </div>
+
+        <!-- Obsolete Department Cards
+            <div class="w3-row-padding" style="margin-top:64px">
+                <div class="w3-quarter l2 m6 w3-margin-bottom">
+                    <div class="w3-card">
+                        <img src="http://static.josephthenara.com/vav-media/img/department/Marketing_01.jpg" alt="marketing" style="width:100%">
+                        <div class="w3-container">
+                            <h3>Marketing (MKT)</h3>
+                            <p class="w3-opacity">Monika & Sia</p>
+                            <p>
+                                Establishing an influential branding for VAV through effective marketing.<br><br>
+                            </p>
+                            <p><a href="v-departments/marketing.php" class="w3-button w3-light-grey w3-block"><i class="fa fa-share"></i> Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-quarter l2 m6 w3-margin-bottom">
+                    <div class="w3-card">
+                        <img src="http://static.josephthenara.com/vav-media/img/department/InfoTech_01.jpg" alt="IT" style="width:100%">
+                        <div class="w3-container">
+                            <h3>Information Tech. (IT)</h3>
+                            <p class="w3-opacity">Iris & Yuki</p>
+                            <p>
+                                Providing necessary technological assistance, quality graphic design and videos for promotion.
+                            </p>
+                            <p><a href="v-departments/information-technology.php" class="w3-button w3-light-grey w3-block"><i class="fa fa-share"></i> Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-quarter l2 m6 w3-margin-bottom">
+                    <div class="w3-card">
+                        <img src="http://static.josephthenara.com/vav-media/img/department/HumanResources_01.jpg" alt="Human Resources" style="width:100%">
+                        <div class="w3-container">
+                            <h3>Human Resources (HR)</h3>
+                            <p class="w3-opacity">Oscar</p>
+                            <p>
+                                Managing efficiency and internal cohesion by optimising human resources.<br><br>
+                            </p>
+                            <p><a href="v-departments/human-resources.php" class="w3-button w3-light-grey w3-block"><i class="fa fa-share"></i> Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-quarter l2 m6 w3-margin-bottom">
+                    <div class="w3-card">
+                        <img src="http://static.josephthenara.com/vav-media/img/department/Secretary_01.jpg" alt="Secretary" style="width:100%">
+                        <div class="w3-container">
+                            <h3>Secretary (Sec)</h3>
+                            <p class="w3-opacity">Antone</p>
+                            <p>
+                                Handling secretarial tasks, paperwork and internal communication.<br><br>
+                            </p>
+                            <p><a href="v-departments/secretary.php" class="w3-button w3-light-grey w3-block"><i class="fa fa-share"></i> Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-quarter l2 m6 w3-margin-bottom">
+                    <div class="w3-card">
+                        <img src="http://static.josephthenara.com/vav-media/img/department/Finance_01.jpg" alt="Finance" style="width:100%">
+                        <div class="w3-container">
+                            <h3>Finance (Fin)</h3>
+                            <p class="w3-opacity">Lydia</p>
+                            <p>
+                                Standardising and institutionalising financial and resources management.<br><br>
+                            </p>
+                            <p><a href="v-departments/finance.php" class="w3-button w3-light-grey w3-block"><i class="fa fa-share"></i> Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-quarter l2 m6 w3-margin-bottom">
+                    <div class="w3-card">
+                        <img src="http://static.josephthenara.com/vav-media/img/department/PresidentTeam_01.jpg" alt="Presidents" style="width:100%">
+                        <div class="w3-container">
+                            <h3>President Team</h3>
+                            <p class="w3-opacity">Henry, Lucie, Sam, Maggie</p>
+                            <p>
+                                Overseeing and advising the organisation in its regular activities.<br><br>
+                            </p>
+                            <p><a href="v-departments/president-team.php" class="w3-button w3-light-grey w3-block"><i class="fa fa-share"></i> Learn More</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="w3-quarter l2 m6 w3-margin-bottom">
-                <div class="w3-card">
-                    <img src="http://static.josephthenara.com/vav-media/img/department/InfoTech_01.jpg" alt="IT" style="width:100%">
-                    <div class="w3-container">
-                        <h3>Information Tech. (IT)</h3>
-                        <p class="w3-opacity">Iris & Yuki</p>
-                        <p>
-                            Providing necessary technological assistance, quality graphic design and videos for promotion.
-                        </p>
-                        <p><a href="v-departments/information-technology.php" class="w3-button w3-light-grey w3-block"><i class="fa fa-share"></i> Learn More</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="w3-quarter l2 m6 w3-margin-bottom">
-                <div class="w3-card">
-                    <img src="http://static.josephthenara.com/vav-media/img/department/HumanResources_01.jpg" alt="Human Resources" style="width:100%">
-                    <div class="w3-container">
-                        <h3>Human Resources (HR)</h3>
-                        <p class="w3-opacity">Oscar</p>
-                        <p>
-                            Managing efficiency and internal cohesion by optimising human resources.<br><br>
-                        </p>
-                        <p><a href="v-departments/human-resources.php" class="w3-button w3-light-grey w3-block"><i class="fa fa-share"></i> Learn More</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="w3-quarter l2 m6 w3-margin-bottom">
-                <div class="w3-card">
-                    <img src="http://static.josephthenara.com/vav-media/img/department/Secretary_01.jpg" alt="Secretary" style="width:100%">
-                    <div class="w3-container">
-                        <h3>Secretary (Sec)</h3>
-                        <p class="w3-opacity">Antone</p>
-                        <p>
-                            Handling secretarial tasks, paperwork and internal communication.<br><br>
-                        </p>
-                        <p><a href="v-departments/secretary.php" class="w3-button w3-light-grey w3-block"><i class="fa fa-share"></i> Learn More</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="w3-quarter l2 m6 w3-margin-bottom">
-                <div class="w3-card">
-                    <img src="http://static.josephthenara.com/vav-media/img/department/Finance_01.jpg" alt="Finance" style="width:100%">
-                    <div class="w3-container">
-                        <h3>Finance (Fin)</h3>
-                        <p class="w3-opacity">Lydia</p>
-                        <p>
-                            Standardising and institutionalising financial and resources management.<br><br>
-                        </p>
-                        <p><a href="v-departments/finance.php" class="w3-button w3-light-grey w3-block"><i class="fa fa-share"></i> Learn More</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="w3-quarter l2 m6 w3-margin-bottom">
-                <div class="w3-card">
-                    <img src="http://static.josephthenara.com/vav-media/img/department/PresidentTeam_01.jpg" alt="Presidents" style="width:100%">
-                    <div class="w3-container">
-                        <h3>President Team</h3>
-                        <p class="w3-opacity">Henry, Lucie, Sam, Maggie</p>
-                        <p>
-                            Overseeing and advising the organisation in its regular activities.<br><br>
-                        </p>
-                        <p><a href="v-departments/president-team.php" class="w3-button w3-light-grey w3-block"><i class="fa fa-share"></i> Learn More</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    -->
     </div>
 
     <!-- Programme Section -->
     <div class="w3-container" style="padding:128px 16px" id="prog">
+
         <h4 class="w3-center"><span class="w3-tag w3-wide w3-theme-l1">PROGRAMMES</span></h4>
         <p class="w3-center w3-large">Coloring your university life</p>
-        <div class="w3-row-padding" style="margin-top:64px">
+
+    <!-- Programme Buttons -->
+        <div class="w3-row-padding" style="margin-top: 64px;">
+
+            <!-- OLLE -->
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-display-container w3-card" style="width: 100%;">
+                    <a href="v-programmes/olle.php" class="w3-hover-opacity">
+                        <img class="w3-round" src="http://static.josephthenara.com/vav-media/img/programme/OLLE_01.jpg" width="100%">
+                        <h4 class="w3-display-bottommiddle w3-center w3-display-hover w3-theme w3-bar w3-panel w3-hide-small">ONLINE LANGUAGE LEARNING EXCHANGE (OLLE)</h4>
+                        <h5 class="w3-display-bottommiddle w3-center w3-theme w3-bar w3-panel w3-hide-large w3-hide-medium">OLLE</h5>
+                    </a>
+                </div>
+            </div>
+
+            <!-- SEEK -->
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-display-container w3-card" style="width: 100%;">
+                    <a href="v-programmes/home-stay.php" class="w3-hover-opacity">
+                        <img class="w3-round" src="http://static.josephthenara.com/vav-media/img/programme/HomeStay_01.jpg" width="100%">
+                        <h4 class="w3-display-bottommiddle w3-center w3-display-hover w3-theme w3-bar w3-panel w3-hide-small">SEEK</h4>
+                        <h5 class="w3-display-bottommiddle w3-center w3-theme w3-bar w3-panel w3-hide-large w3-hide-medium">SEEK</h5>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Bonne Fete -->
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-display-container w3-card" style="width: 100%;">
+                    <a href="v-programmes/olle.php" class="w3-hover-opacity">
+                        <img class="w3-round" src="http://static.josephthenara.com/vav-media/img/programme/BonneFete_01.jpg" width="100%">
+                        <h4 class="w3-display-bottommiddle w3-center w3-display-hover w3-theme w3-bar w3-panel w3-hide-small">BONNE FÊTE</h4>
+                        <h5 class="w3-display-bottommiddle w3-center w3-theme w3-bar w3-panel w3-hide-large w3-hide-medium">BONNE FÊTE</h5>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Buddy System -->
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-display-container w3-card" style="width: 100%;">
+                    <a href="v-programmes/home-stay.php" class="w3-hover-opacity">
+                        <img class="w3-round" src="http://static.josephthenara.com/vav-media/img/programme/BuddySystem_01.jpg" width="100%">
+                        <h4 class="w3-display-bottommiddle w3-center w3-display-hover w3-theme w3-bar w3-panel w3-hide-small">BUDDY SYSTEM</h4>
+                        <h5 class="w3-display-bottommiddle w3-center w3-theme w3-bar w3-panel w3-hide-large w3-hide-medium">BUDDY SYSTEM</h5>
+                    </a>
+                </div>
+            </div>
+
+            <!-- PACT -->
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-display-container w3-card" style="width: 100%;">
+                    <a href="v-programmes/home-stay.php" class="w3-hover-opacity">
+                        <img class="w3-round" src="http://static.josephthenara.com/vav-media/img/programme/PACT_01.jpg" width="100%">
+                        <h4 class="w3-display-bottommiddle w3-center w3-display-hover w3-theme w3-bar w3-panel w3-hide-small">PACT</h4>
+                        <h5 class="w3-display-bottommiddle w3-center w3-theme w3-bar w3-panel w3-hide-large w3-hide-medium">PACT</h5>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Travelling -->
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-display-container w3-card" style="width: 100%;">
+                    <a href="v-programmes/home-stay.php" class="w3-hover-opacity">
+                        <img class="w3-round" src="http://static.josephthenara.com/vav-media/img/programme/Travelling_01.jpg" width="100%">
+                        <h4 class="w3-display-bottommiddle w3-center w3-display-hover w3-theme w3-bar w3-panel w3-hide-small">TRAVELLING</h4>
+                        <h5 class="w3-display-bottommiddle w3-center w3-theme w3-bar w3-panel w3-hide-large w3-hide-medium">TRAVELLING</h5>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Go~UK! -->
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-display-container w3-card" style="width: 100%;">
+                    <a href="v-programmes/home-stay.php" class="w3-hover-opacity">
+                        <img class="w3-round" src="http://static.josephthenara.com/vav-media/img/programme/GoUK_01.jpg" width="100%">
+                        <h4 class="w3-display-bottommiddle w3-center w3-display-hover w3-theme w3-bar w3-panel w3-hide-small">GO~UK!</h4>
+                        <h5 class="w3-display-bottommiddle w3-center w3-theme w3-bar w3-panel w3-hide-large w3-hide-medium">GO~UK!</h5>
+                    </a>
+                </div>
+            </div>
+
+
+
+        </div>
+        <!--div class="w3-row-padding" style="margin-top:64px">
             <div class="w3-quarter l2 m6 w3-margin-bottom">
                 <div class="w3-card">
                     <img src="http://static.josephthenara.com/vav-media/img/programme/BuddySystem_01.jpg" alt="Buddy System" style="width:100%">
@@ -352,7 +520,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div-->
     </div>
 
     <!-- Learn More/Area Container -->

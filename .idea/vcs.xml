@@ -4,6 +4,5 @@
     <mapping directory="$PROJECT_DIR$/../josephthen" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../josephthen/vis-a-vis/vav-site" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="D:\Software\_Installed\wamp64\www\vis-a-vis\vav-site" vcs="Git" />
   </component>
 </project>

@@ -218,7 +218,7 @@
                 <img src="http://static.josephthenara.com/vav-media/img/attribute/vav_web_logo.svg" height="50">
             </a>
             <p>Vis-à-Vis Organisation</p>
-            <p class="w3-small w3-panel w3-theme-l1">VAV Mailbox System v.2.0.0</p>
+            <p class="w3-small w3-panel w3-theme-l1">VAV Mailbox System v.2.1.0</p>
         </div>
     </div>
 
