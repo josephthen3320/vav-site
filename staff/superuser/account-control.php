@@ -116,8 +116,8 @@ include ('php/create_account.php');
             <hr />
             <a href="../dashboard.php" class="w3-bar-item w3-button w3-hover-pale-blue"><i class="fa fa-fw fa-dove w3-text-blue"></i> BLUE Dashboard</a>
             <hr />
-            <a href="#" class="w3-bar-item w3-button su-hover-theme"><i class="fa fa-fw fa-dragon"></i> Dashboard</a>
-            <a href="account-control" class="w3-bar-item w3-button su-hover-theme"><i class="fa fa-fw fa-user"></i> Account</a>
+            <a href="su-dashboard.php" class="w3-bar-item w3-button su-hover-theme"><i class="fa fa-fw fa-dragon"></i> Dashboard</a>
+            <a href="#" class="w3-bar-item w3-button su-hover-theme"><i class="fa fa-fw fa-user"></i> Account</a>
             <a href="site-setting.php" class="w3-bar-item w3-button su-hover-theme"><i class="fa fa-fw fa-plug"></i> Site</a>
             <a href="content-setting.php" class="w3-bar-item w3-button su-hover-theme"><i class="fa fa-fw fa-edit"></i> Content</a>
             <hr />
@@ -133,15 +133,15 @@ include ('php/create_account.php');
 
 <!-- Top Navbar on small screens -->
     <div class="w3-top w3-hide-large w3-hide-medium w3-bar w3-display-container su-theme-d5" id="myNavbar">
-        <a href="#" class="w3-bar-item w3-button su-theme"><i class="fa fa-fw fa-dragon"></i> RED Dashboard</a>
+        <a href="su-dashboard.php" class="w3-bar-item w3-button su-theme"><i class="fa fa-fw fa-dragon"></i> RED Dashboard</a>
         <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
             <i class="fa fa-bars"></i>
         </a>
         <div class="w3-bar-block w3-hide w3-hide-large w3-hide-medium" id="navDemo">
-            <a href="../dashboard.php" class="w3-bar-item w3-button su-hover-theme"><i class="fa fa-fw fa-dove"></i> BLUE Dashboard</a>
-            <a href="calendar.php" class="w3-bar-item w3-button w3-hover-theme"><i class="fa fa-fw fa-calendar"></i> Calendar</a>
-            <a href="inbox.php" class="w3-bar-item w3-button w3-hover-theme"><i class="fa fa-fw fa-user-plus"></i> Mailbox</a>
-            <a href="toolbox.php" class="w3-bar-item w3-button w3-hover-theme"><i class="fa fa-fw fa-tools"></i> Toolbox</a>
+            <a href="../dashboard.php" class="w3-bar-item w3-button w3-hover-light-blue"><i class="fa fa-fw fa-dove w3-text-blue"></i> BLUE Dashboard</a>
+            <a href="#" class="w3-bar-item w3-button su-hover-theme"><i class="fa fa-fw fa-user"></i> Account</a>
+            <a href="site-setting.php" class="w3-bar-item w3-button su-hover-theme"><i class="fa fa-fw fa-plug"></i> Site</a>
+            <a href="content-setting.php" class="w3-bar-item w3-button su-hover-theme"><i class="fa fa-fw fa-edit"></i> Content</a>
             <a href="php/logout.php" class="w3-bar-item w3-button w3-hover-red"><i class="fa fa-fw fa-sign-out-alt"></i> Logout</a>
         </div>
     </div>
@@ -386,48 +386,14 @@ include ('php/create_account.php');
     </div>
 
     <!-- Footer only in small screens -->
-    <div class="w3-hide-large w3-hide-medium w3-center w3-padding-64 su-theme-d5 w3-bar">
-        <div class="su-theme-d5>
-            <a href="../">
-                <img src="http://static.josephthenara.com/vav-media/img/attribute/vav_web_logo.svg" height="50">
-            </a>
-            <p>Vis-à-Vis Organisation</p>
-            <p class="w3-small w3-panel su-theme-l1">VAV Account Management System v.1.0.0</p>
-        </div>
+    <div class="w3-hide-large w3-hide-medium su-theme-d5 w3-center w3-padding-64 w3-bar">
+        <a href="../">
+            <img src="http://static.josephthenara.com/vav-media/img/attribute/vav_web_logo.svg" height="50">
+        </a>
+        <p>Vis-à-Vis Organisation</p>
+        <p class="w3-small w3-panel su-theme-l1">VAV Account Management System v.1.0.0</p>
     </div>
 
-        <!--div class="w3-half w3-container su-theme-l4 w3-center w3-padding-64" style="margin-left: 15%;">
-            <h3 class="w3-center w3-text-theme w3-bar"><b>V-Dashboard</b></h3>
-
-            <div>
-                <h6 class="w3-center w3-bar"><span class="su-theme-d3 w3-wide w3-tag">Website Inbox</span></h6>
-
-                <table class="w3-table-all w3-centered" style="width: 100%;">
-                    <tr>
-                        <td colspan="4" class="su-theme"><b>Message List</b></td>
-                    </tr>
-                    <tr>
-                        <th class="w3-center" style="width: 10%;">
-                            <h6><b>#</b></h6>
-                        </th>
-                        <th class="w3-center" style="width: 25%;">
-                            <h6><b>Name</b></h6>
-                        </th>
-                        <th class="w3-center" style="width: 50%;">
-                            <h6><b>Message Content</b></h6>
-                        </th>
-                        <th class="w3-center" style="width: 15%;">
-                            <h6><b>Operations</b></h6>
-                        </th>
-                    </tr>
-                    <?php include ('php/load-inbox.php'); ?>
-                </table>
-            </div>
-        </div-->
-
-    <!-- div class="w3-display-container w3-bar su-theme-d5 w3-center">
-        <p>VAV Website Inbox System v.1.1.0</p>
-    </div -->
 
 </body>
 </html>

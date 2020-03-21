@@ -55,7 +55,7 @@ include ('../php/config.php');
             <a href="../dashboard.php" class="w3-bar-item w3-button w3-hover-pale-blue"><i class="fa fa-fw fa-dove w3-text-blue"></i> BLUE Dashboard</a>
             <hr />
             <a href="#" class="w3-bar-item w3-button su-hover-theme"><i class="fa fa-fw fa-dragon"></i> Dashboard</a>
-            <a href="account-control" class="w3-bar-item w3-button su-hover-theme"><i class="fa fa-fw fa-user"></i> Account</a>
+            <a href="account-control.php" class="w3-bar-item w3-button su-hover-theme"><i class="fa fa-fw fa-user"></i> Account</a>
             <a href="site-setting.php" class="w3-bar-item w3-button su-hover-theme"><i class="fa fa-fw fa-plug"></i> Site</a>
             <a href="content-setting.php" class="w3-bar-item w3-button su-hover-theme"><i class="fa fa-fw fa-edit"></i> Content</a>
             <hr />
@@ -63,7 +63,7 @@ include ('../php/config.php');
 
             <hr />
             <div class="w3-bar-item w3-center">
-                <p class="w3-small">VAV RED Dashboard System v.1.0.0</p>
+                <p class="w3-small">VAV RED Dashboard System v.2.0.1</p>
             </div>
 
         </div>
@@ -77,7 +77,7 @@ include ('../php/config.php');
         </a>
         <div class="w3-bar-block w3-hide w3-hide-large w3-hide-medium" id="navDemo">
             <a href="../dashboard.php" class="w3-bar-item w3-button w3-hover-light-blue"><i class="fa fa-fw fa-dove w3-text-blue"></i> BLUE Dashboard</a>
-            <a href="account-control" class="w3-bar-item w3-button su-hover-theme"><i class="fa fa-fw fa-user"></i> Account</a>
+            <a href="account-control.php" class="w3-bar-item w3-button su-hover-theme"><i class="fa fa-fw fa-user"></i> Account</a>
             <a href="site-setting.php" class="w3-bar-item w3-button su-hover-theme"><i class="fa fa-fw fa-plug"></i> Site</a>
             <a href="content-setting.php" class="w3-bar-item w3-button su-hover-theme"><i class="fa fa-fw fa-edit"></i> Content</a>
             <a href="php/logout.php" class="w3-bar-item w3-button w3-hover-red"><i class="fa fa-fw fa-sign-out-alt"></i> Logout</a>
@@ -144,6 +144,15 @@ include ('../php/config.php');
                 <p>Some text in the Modal..</p>
             </div>
         </div>
+    </div>
+
+<!-- Footer only in small screens -->
+    <div class="w3-hide-large w3-hide-medium su-theme-d5 w3-center w3-padding-64 w3-bar">
+        <a href="../">
+            <img src="http://static.josephthenara.com/vav-media/img/attribute/vav_web_logo.svg" height="50">
+        </a>
+        <p>Vis-à-Vis Organisation</p>
+        <p class="w3-small w3-panel su-theme-l1">VAV RED Dashboard System v.2.0.1</p>
     </div>
 
 </body>

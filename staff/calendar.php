@@ -53,6 +53,7 @@
                 <h6>Vis-à-Vis Organisation</h6>
                 <h5 class="w3-center w3-bar-item w3-theme"><b>Calendar</b></h5>
             </div>
+            <?php if ($username == 'nara') {echo "<hr />";} include ('modular/staff-su-header-auth.php'); ?>
             <hr />
             <a href="dashboard.php" class="w3-bar-item w3-button w3-hover-theme"><i class="fa fa-fw fa-tachometer-alt"></i> Dashboard</a>
             <a href="# " class="w3-bar-item w3-button w3-hover-theme"><i class="fa fa-fw fa-calendar"></i> Calendar</a>
@@ -72,12 +73,13 @@
     </div>
 
 <!-- Top Navbar on small screens -->
-    <div class="w3-top w3-hide-large w3-hide-medium w3-bar w3-display-container w3-theme-d5 w3-large" id="myNavbar">
+    <div class="w3-top w3-hide-large w3-hide-medium w3-bar w3-display-container w3-theme-d5" id="myNavbar">
         <a href="dashboard.php" class="w3-bar-item w3-button w3-theme"><i class="fa fa-fw fa-home"></i> Dashboard</a>
         <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
             <i class="fa fa-bars"></i>
         </a>
         <div class="w3-bar-block w3-hide w3-hide-large w3-hide-medium" id="navDemo">
+            <?php include ('modular/staff-su-header-auth.php'); ?>
             <a href="#" class="w3-bar-item w3-button w3-hover-theme"><i class="fa fa-fw fa-calendar"></i> Calendar</a>
             <a href="inbox.php" class="w3-bar-item w3-button w3-hover-theme"><i class="fa fa-fw fa-envelope"></i> Mailbox</a>
             <a href="toolbox.php" class="w3-bar-item w3-button w3-hover-theme"><i class="fa fa-fw fa-tools"></i> Toolbox</a>
