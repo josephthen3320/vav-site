@@ -121,7 +121,7 @@ include ('php/create_account.php');
             <a href="site-setting.php" class="w3-bar-item w3-button su-hover-theme"><i class="fa fa-fw fa-plug"></i> Site</a>
             <a href="content-setting.php" class="w3-bar-item w3-button su-hover-theme"><i class="fa fa-fw fa-edit"></i> Content</a>
             <hr />
-            <a href="php/logout.php" class="w3-bar-item w3-button w3-hover-red"><i class="fa fa-fw fa-sign-out-alt"></i> Logout</a>
+            <a href="../php/logout.php" class="w3-bar-item w3-button w3-hover-red"><i class="fa fa-fw fa-sign-out-alt"></i> Logout</a>
 
             <hr />
             <div class="w3-bar-item w3-center">
@@ -142,7 +142,7 @@ include ('php/create_account.php');
             <a href="#" class="w3-bar-item w3-button su-hover-theme"><i class="fa fa-fw fa-user"></i> Account</a>
             <a href="site-setting.php" class="w3-bar-item w3-button su-hover-theme"><i class="fa fa-fw fa-plug"></i> Site</a>
             <a href="content-setting.php" class="w3-bar-item w3-button su-hover-theme"><i class="fa fa-fw fa-edit"></i> Content</a>
-            <a href="php/logout.php" class="w3-bar-item w3-button w3-hover-red"><i class="fa fa-fw fa-sign-out-alt"></i> Logout</a>
+            <a href="../php/logout.php" class="w3-bar-item w3-button w3-hover-red"><i class="fa fa-fw fa-sign-out-alt"></i> Logout</a>
         </div>
     </div>
 </Navigation>
