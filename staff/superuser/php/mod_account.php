@@ -17,8 +17,7 @@
                             $acc_row[password]
                         </td>
                         <td>
-                            <div class='w3-button w3-small w3-round-medium su-theme-l1 su-hover-theme'><i class='fa fa-edit' onclick='openAccModal()'></i></div>
-                            <div class='w3-button w3-small w3-round-medium su-theme-l1 su-hover-theme'><i class='fa fa-skull-crossbones'></i></div>
+                            <div class='w3-button w3-small w3-round-medium su-theme-l1 su-hover-theme'><i class='fa fa-fw fa-user-times'></i></div>
                         </td>
                     </tr>
             ";

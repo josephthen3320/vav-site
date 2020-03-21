@@ -53,6 +53,7 @@
                 <h6>Vis-à-Vis Organisation</h6>
                 <h5 class="w3-center w3-bar-item w3-theme"><b>Dashboard</b></h5>
             </div>
+            <?php include ('modular/staff-su-header-auth.php'); ?>
             <hr />
             <a href="#" class="w3-bar-item w3-button w3-hover-theme"><i class="fa fa-fw fa-tachometer-alt"></i> Dashboard</a>
             <a href="calendar.php" class="w3-bar-item w3-button w3-hover-theme"><i class="fa fa-fw fa-calendar"></i> Calendar</a>

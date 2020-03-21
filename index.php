@@ -92,7 +92,7 @@
         }
 
         function formAlert($alert_msg) {
-            echo "<script type='text/javascript'>alert('$msg');</script>";
+            echo "<script type='text/javascript'>alert('$alert_msg');</script>";
         }
     ?>
 </php>
@@ -193,7 +193,7 @@
             <!-- Infotech -->
                 <div class="w3-third w3-margin-bottom">
                     <div class="w3-display-container w3-card" style="width: 100%;">
-                        <a href="v-departments/marketing.php" class="w3-hover-opacity">
+                        <a href="v-departments/information-technology.php" class="w3-hover-opacity">
                             <img class="w3-round" src="http://static.josephthenara.com/vav-media/img/department/InfoTech_01.jpg" width="100%">
                             <h4 class="w3-display-bottommiddle w3-center w3-display-hover w3-theme w3-bar w3-panel w3-hide-small">INFORMATION TECHNOLOGY</h4>
                             <h5 class="w3-display-bottommiddle w3-center w3-theme w3-bar w3-panel w3-hide-large w3-hide-medium">INFORMATION TECHNOLOGY</h5>
@@ -205,7 +205,7 @@
             <!-- Human Resources -->
                 <div class="w3-third w3-margin-bottom">
                     <div class="w3-display-container w3-card" style="width: 100%;">
-                        <a href="v-departments/marketing.php" class="w3-hover-opacity">
+                        <a href="v-departments/human-resources.php" class="w3-hover-opacity">
                             <img class="w3-round" src="http://static.josephthenara.com/vav-media/img/department/HumanResources_01.jpg" width="100%">
                             <h4 class="w3-display-bottommiddle w3-center w3-display-hover w3-theme w3-bar w3-panel w3-hide-small">HUMAN RESOURCES</h4>
                             <h5 class="w3-display-bottommiddle w3-center w3-theme w3-bar w3-panel w3-hide-large w3-hide-medium">HUMAN RESOURCES</h5>
@@ -217,7 +217,7 @@
             <!-- Secretary -->
                 <div class="w3-third w3-margin-bottom">
                     <div class="w3-display-container w3-card" style="width: 100%;">
-                        <a href="v-departments/marketing.php" class="w3-hover-opacity">
+                        <a href="v-departments/secretary.php" class="w3-hover-opacity">
                             <img class="w3-round" src="http://static.josephthenara.com/vav-media/img/department/Secretary_01.jpg" width="100%">
                             <h4 class="w3-display-bottommiddle w3-center w3-display-hover w3-theme w3-bar w3-panel w3-hide-small">SECRETARY</h4>
                             <h5 class="w3-display-bottommiddle w3-center w3-theme w3-bar w3-panel w3-hide-large w3-hide-medium">SECRETARY</h5>
@@ -229,7 +229,7 @@
             <!-- Finance -->
                 <div class="w3-third w3-margin-bottom">
                     <div class="w3-display-container w3-card" style="width: 100%;">
-                        <a href="v-departments/marketing.php" class="w3-hover-opacity">
+                        <a href="v-departments/finance.php" class="w3-hover-opacity">
                             <img class="w3-round" src="http://static.josephthenara.com/vav-media/img/department/Finance_01.jpg" width="100%">
                             <h4 class="w3-display-bottommiddle w3-center w3-display-hover w3-theme w3-bar w3-panel w3-hide-small">FINANCE</h4>
                             <h5 class="w3-display-bottommiddle w3-center w3-theme w3-bar w3-panel w3-hide-large w3-hide-medium">FINANCE</h5>
@@ -241,7 +241,7 @@
             <!-- President Team -->
                 <div class="w3-third w3-margin-bottom">
                     <div class="w3-display-container w3-card" style="width: 100%;">
-                        <a href="v-departments/marketing.php" class="w3-hover-opacity">
+                        <a href="v-departments/president-team.php" class="w3-hover-opacity">
                             <img class="w3-round" src="http://static.josephthenara.com/vav-media/img/department/PresidentTeam_01.jpg" width="100%">
                             <h4 class="w3-display-bottommiddle w3-center w3-display-hover w3-theme w3-bar w3-panel w3-hide-small">PRESIDENT TEAM</h4>
                             <h5 class="w3-display-bottommiddle w3-center w3-theme w3-bar w3-panel w3-hide-large w3-hide-medium">PRESIDENT TEAM</h5>
@@ -249,10 +249,6 @@
                         
                     </div>
                 </div>
-                <!--div class="w3-card w3-theme-l1 w3-hover-theme w3-button w3-round-large" style="width: 100%;">
-                    <h2 class="w3-hide-small w3-hide-medium">INFORMATION TECHNOLOGY</h2>
-                    <h2 class="w3-hide-large">IT</h2>
-                </div-->
             </div>
 
         <!-- Obsolete Department Cards
@@ -373,7 +369,7 @@
             <!-- Bonne Fete -->
             <div class="w3-third w3-margin-bottom">
                 <div class="w3-display-container w3-card" style="width: 100%;">
-                    <a href="v-programmes/olle.php" class="w3-hover-opacity">
+                    <a href="v-programmes/bonne-fete.php" class="w3-hover-opacity">
                         <img class="w3-round" src="http://static.josephthenara.com/vav-media/img/programme/BonneFete_01.jpg" width="100%">
                         <h4 class="w3-display-bottommiddle w3-center w3-display-hover w3-theme w3-bar w3-panel w3-hide-small">BONNE FÊTE</h4>
                         <h5 class="w3-display-bottommiddle w3-center w3-theme w3-bar w3-panel w3-hide-large w3-hide-medium">BONNE FÊTE</h5>
@@ -384,7 +380,7 @@
             <!-- Buddy System -->
             <div class="w3-third w3-margin-bottom">
                 <div class="w3-display-container w3-card" style="width: 100%;">
-                    <a href="v-programmes/home-stay.php" class="w3-hover-opacity">
+                    <a href="v-programmes/buddy-system.php" class="w3-hover-opacity">
                         <img class="w3-round" src="http://static.josephthenara.com/vav-media/img/programme/BuddySystem_01.jpg" width="100%">
                         <h4 class="w3-display-bottommiddle w3-center w3-display-hover w3-theme w3-bar w3-panel w3-hide-small">BUDDY SYSTEM</h4>
                         <h5 class="w3-display-bottommiddle w3-center w3-theme w3-bar w3-panel w3-hide-large w3-hide-medium">BUDDY SYSTEM</h5>
@@ -395,7 +391,7 @@
             <!-- PACT -->
             <div class="w3-third w3-margin-bottom">
                 <div class="w3-display-container w3-card" style="width: 100%;">
-                    <a href="v-programmes/home-stay.php" class="w3-hover-opacity">
+                    <a href="v-programmes/pact.php" class="w3-hover-opacity">
                         <img class="w3-round" src="http://static.josephthenara.com/vav-media/img/programme/PACT_01.jpg" width="100%">
                         <h4 class="w3-display-bottommiddle w3-center w3-display-hover w3-theme w3-bar w3-panel w3-hide-small">PACT</h4>
                         <h5 class="w3-display-bottommiddle w3-center w3-theme w3-bar w3-panel w3-hide-large w3-hide-medium">PACT</h5>
@@ -406,7 +402,7 @@
             <!-- Travelling -->
             <div class="w3-third w3-margin-bottom">
                 <div class="w3-display-container w3-card" style="width: 100%;">
-                    <a href="v-programmes/home-stay.php" class="w3-hover-opacity">
+                    <a href="v-programmes/travelling.php" class="w3-hover-opacity">
                         <img class="w3-round" src="http://static.josephthenara.com/vav-media/img/programme/Travelling_01.jpg" width="100%">
                         <h4 class="w3-display-bottommiddle w3-center w3-display-hover w3-theme w3-bar w3-panel w3-hide-small">TRAVELLING</h4>
                         <h5 class="w3-display-bottommiddle w3-center w3-theme w3-bar w3-panel w3-hide-large w3-hide-medium">TRAVELLING</h5>
@@ -417,7 +413,7 @@
             <!-- Go~UK! -->
             <div class="w3-third w3-margin-bottom">
                 <div class="w3-display-container w3-card" style="width: 100%;">
-                    <a href="v-programmes/home-stay.php" class="w3-hover-opacity">
+                    <a href="v-programmes/go-uk.php" class="w3-hover-opacity">
                         <img class="w3-round" src="http://static.josephthenara.com/vav-media/img/programme/GoUK_01.jpg" width="100%">
                         <h4 class="w3-display-bottommiddle w3-center w3-display-hover w3-theme w3-bar w3-panel w3-hide-small">GO~UK!</h4>
                         <h5 class="w3-display-bottommiddle w3-center w3-theme w3-bar w3-panel w3-hide-large w3-hide-medium">GO~UK!</h5>

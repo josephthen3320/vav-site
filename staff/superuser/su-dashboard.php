@@ -7,7 +7,7 @@ include ('../php/config.php');
 
 <!DOCTYPE html>
 <html>
-<title><?php echo "V-SU | </$username>"; ?></title>
+<title>V-RED: <?php echo "</$username>"; ?></title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://static.josephthenara.com/vav-media/css/w3.css">
@@ -15,65 +15,101 @@ include ('../php/config.php');
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="//db.onlinewebfonts.com/c/3f086dbc376893f56b4a9c4d3cac5df9?family=Hiragino+Sans+GB" type="text/css"/>
 <style>
     body, html {
         height: 100%;
-        font-family: "Inconsolata", sans-serif;
+        font-family: "Inconsolata", "Hiragino Sans GB", "Microsoft Yahei UI","微软雅黑", sans-serif;
     }
-
-    .bgimg {
-        background-position: center;
-        background-size: cover;
-        background-image: url("/img/bg01.jpg");
-        min-height: 75%;
-    }
-
-    .menu {
-        display: none;
-    }
-
-    #login-form {
-        width: 30%;           /* Set this to your convenience */
-        height: 60%;          /* Set this to your convenience */
-        position: absolute;
-        top: 30%;
-        left: 42.5%;
-        margin-top: -100px;     /* Half of height */
-        margin-left: -150px;     /* Half of width */
+    .fullscreen {
+        height: 100%;
     }
 </style>
+<script>
+    function detectFrameSize() {
+        var fWidth  = window.innerWidth;
+        var fHeight = window.innerHeight;
+        var xx      = document.getElementById("mainContent");
+        if (fWidth < 993) {
+            xx.style.marginLeft =   "0%";
+            xx.className        +=  "w3-padding-32";
+        }
+    }
+</script>
 
-<body class="su-theme-l5">
 
-    <div class="su-theme-d5">
-        <!-- Navbar on large screens -->
-        <div class="w3-bar w3-display-container" id="myNavbar">
-            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-                <i class="fa fa-bars"></i>
-            </a>
+<body class="su-theme-l5" onload="detectFrameSize()">
+<Navigation>
+<!-- Sidenav -->
+    <div class="w3-hide-small" id="sideNav">
+        <div class="w3-sidebar su-theme-d5 w3-bar-block w3-padding-32 w3-animate-left w3-display-container" style="width: 15%;">
+            <div class="w3-display-container w3-center w3-bar-item">
+                <a href="../../index.php">
+                    <img class="w3-image" style="width: 120px;" src="http://static.josephthenara.com/vav-media/img/attribute/vav_web_logo.svg">
+                </a>
 
-            <a href="#" class="w3-bar-item w3-button w3-left su-theme su-hover-theme"><i class="fas fa-dragon"></i> SU DASHBOARD</a>
-            <a href="../dashboard.php" class="w3-bar-item w3-button w3-left su-hover-theme w3-hide-small w3-hide-medium"><i class="fa fa-dove"></i> BLUE DASHBOARD</a>
-            <div class="w3-bar-item w3-display-middle"><?php echo "<./$username::SUDB>"; ?></div>
-            <div class="w3-right w3-hide-small w3-hide-medium">
-                <a href="../php/logout.php" class="w3-bar-item w3-button w3-hover-red w3-hide-small w3-hide-medium">Log Out <i class="fa fa-sign-out-alt"></i></a>
+                <h6>Vis-à-Vis Organisation</h6>
+                <h5 class="w3-center w3-bar-item su-theme"><b>RED Dashboard</b></h5>
             </div>
-        </div>
+            <hr />
+            <a href="../dashboard.php" class="w3-bar-item w3-button w3-hover-pale-blue"><i class="fa fa-fw fa-dove w3-text-blue"></i> BLUE Dashboard</a>
+            <hr />
+            <a href="#" class="w3-bar-item w3-button su-hover-theme"><i class="fa fa-fw fa-dragon"></i> Dashboard</a>
+            <a href="account-control" class="w3-bar-item w3-button su-hover-theme"><i class="fa fa-fw fa-user"></i> Account</a>
+            <a href="site-setting.php" class="w3-bar-item w3-button su-hover-theme"><i class="fa fa-fw fa-plug"></i> Site</a>
+            <a href="content-setting.php" class="w3-bar-item w3-button su-hover-theme"><i class="fa fa-fw fa-edit"></i> Content</a>
+            <hr />
+            <a href="php/logout.php" class="w3-bar-item w3-button w3-hover-red"><i class="fa fa-fw fa-sign-out-alt"></i> Logout</a>
 
-        <!-- Navbar on small screens -->
-        <div id="navDemo" class="w3-bar-block su-theme-d1 w3-hide w3-hide-large w3-hide-medium">
-            <a href="../dashboard.php" class="w3-bar-item w3-button w3-left su-hover-theme" onclick="toggleFunction()"><i class="fa fa-dove"></i> BLUE DASHBOARD</a>
-            <a href="../php/logout.php" class="w3-bar-item w3-button w3-hover-red" onclick="toggleFunction()"><i class="fa fa-sign-out-alt"></i> LOG OUT</a>
-        </div>
+            <hr />
+            <div class="w3-bar-item w3-center">
+                <p class="w3-small">VAV RED Dashboard System v.1.0.0</p>
+            </div>
 
+        </div>
     </div>
 
-    <div class="w3-bar w3-display-container su-theme" style="width: 100%;">
-        <div class="w3-bar-item w3-hide-small w3-hide-medium">Management Options <i class="fa fa-angle-double-right"></i></div>
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Account</a>
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-plug"></i> Site</a>
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-edit"></i> Content</a>
+<!-- Top Navbar on small screens -->
+    <div class="w3-top w3-hide-large w3-hide-medium w3-bar w3-display-container su-theme-d5" id="myNavbar">
+        <a href="#" class="w3-bar-item w3-button su-theme"><i class="fa fa-fw fa-dragon"></i> RED Dashboard</a>
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div class="w3-bar-block w3-hide w3-hide-large w3-hide-medium" id="navDemo">
+            <a href="../dashboard.php" class="w3-bar-item w3-button w3-hover-light-blue"><i class="fa fa-fw fa-dove w3-text-blue"></i> BLUE Dashboard</a>
+            <a href="account-control" class="w3-bar-item w3-button su-hover-theme"><i class="fa fa-fw fa-user"></i> Account</a>
+            <a href="site-setting.php" class="w3-bar-item w3-button su-hover-theme"><i class="fa fa-fw fa-plug"></i> Site</a>
+            <a href="content-setting.php" class="w3-bar-item w3-button su-hover-theme"><i class="fa fa-fw fa-edit"></i> Content</a>
+            <a href="php/logout.php" class="w3-bar-item w3-button w3-hover-red"><i class="fa fa-fw fa-sign-out-alt"></i> Logout</a>
+        </div>
     </div>
+</Navigation>
+
+<!-- Site Content -->
+    <div class="" style="margin-left: 15%;" id="mainContent">
+        <!-- Top Navbar -->
+        <div class="w3-bar-block su-theme-d5 w3-animate-right w3-hide-small">
+            <div class="w3-bar-item">
+                <a href="#" class="w3-text-white w3-hover-text-pink"><i class="fa fa-dragon"></i></a>
+                ::
+                <a href="#" style="text-decoration: none" class="w3-text-white w3-hover-text-pink"><b>RED Dashboard</b></a>
+                <i class="fa fa-angle-right w3-small"></i>
+                <i class="fa fa-angle-right w3-small"></i>
+                <i class="fa fa-angle-right w3-small"></i>
+            <i class="fa fa-angle-right w3-small"></i>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <div class="w3-bar su-theme w3-animate-right">
+        <div class="w3-bar-item">
+            <h3>RED Dashboard</h3>
+        </div>
+    </div>
+    </div>
+
+    <!-- Content -->
+
 
     <div class="w3-quarter w3-hide-small w3-hide-medium w3-padding-64"></div>
     <div class="w3-half w3-container su-theme-l4 w3-center w3-padding-64">
