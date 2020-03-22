@@ -66,7 +66,7 @@
 
             <hr />
             <div class="w3-bar-item w3-center">
-                <p class="w3-small">VAV Dashboard System v.2.2.0</p>
+                <p class="w3-small">VAV Dashboard System v.2.2.1</p>
             </div>
 
         </div>
@@ -105,16 +105,16 @@
         </div>
 
     <!-- Header -->
-        <div class="w3-bar w3-theme">
+        <div class="w3-bar w3-theme w3-animate-right">
             <div class="w3-bar-item">
                 <h3>Dashboard</h3>
             </div>
         </div>
 
     <!-- Content -->
-        <div class="">
+        <div class="w3-animate-right">
         <!-- Left Bar -->
-            <div class="w3-quarter w3-theme-l1 w3-center w3-bar-block">
+            <div class="w3-quarter w3-center w3-bar-block">
                 <div class="w3-padding-32 w3-bar-item w3-theme-d4 w3-container">
                         <img class="w3-circle w3-left" src="http://static.josephthenara.com/vav-media/img/profile-picture/<?php echo $username.'.jpg'; ?>" style="width: 25%" alt="<?php echo $staff_en_name.' Avatar'; ?>">
                     <div class="w3-container w3-right w3-center" style="width: 75%;">
@@ -149,11 +149,52 @@
         <!-- Right Bar -->
             <div class="w3-quarter w3-theme-l1 w3-center w3-bar-block">
                 <div class="w3-bar-item w3-theme-d4">
+                    <h4>Reminders</h4>
+                </div>
+                <div class="w3-bar-item w3-theme-l5 w3-border-left">
+                    <div class="w3-theme-l4">
+                        <div class="w3-card">
+                            <div class="w3-panel w3-theme">
+                                <h5 class=""><b>Reminder Title</b></h5>
+                            </div>
+                            <div class="w3-left-align w3-panel">
+                                <h6>Programme: <?php echo "$staff_prog01";?></h6>
+                            </div>
+                            <div class="w3-red w3-span w3-panel">
+                                <h6 class="w3-small">2020.03.30 | 16:00</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-theme-l4">
+                        <div class="w3-card">
+                            <div class="w3-panel w3-theme">
+                                <h5 class=""><b>Reminder Title</b></h5>
+                            </div>
+                            <div class="w3-left-align w3-panel">
+                                <h6>Programme: <?php echo "$staff_prog02";?></h6>
+                            </div>
+                            <div class="w3-red w3-span w3-panel">
+                                <h6 class="w3-small">2020.03.30 | 16:00</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-bar-item w3-theme-d4">
                     <h4>Recent Messages</h4>
                 </div>
-                <div class="w3-container w3-border-left w3-theme-l5">
-                    <h5 class="w3-text-red"><b>Message Empty!</b></h5>
-                    <h6>Messaging system under construction</h6>
+                <div class="w3-border-left w3-theme-l5 w3-bar-block">
+                    <div class="w3-bar-item">
+                        <div class="w3-leftbar w3-border-blue w3-panel w3-left-align ">
+                            <h6><b>Sender:</b> <?php echo "$staff_en_name"; ?></h6>
+                            <p>Message Content</p>
+                        </div>
+                    </div>
+                    <div class="w3-bar-item">
+                        <div class="w3-leftbar w3-border-blue w3-panel w3-left-align ">
+                            <h6><b>Sender:</b> <?php echo "$staff_en_name"; ?></h6>
+                            <p>Message Content</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -165,7 +206,7 @@
             <img src="http://static.josephthenara.com/vav-media/img/attribute/vav_web_logo.svg" height="50">
         </a>
         <p>Vis-à-Vis Organisation</p>
-        <p class="w3-small w3-panel w3-theme-l1">VAV Dashboard System v.2.2.0</p>
+        <p class="w3-small w3-panel w3-theme-l1">VAV Dashboard System v.2.2.1</p>
     </div>
 
 </body>
