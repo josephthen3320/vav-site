@@ -66,7 +66,7 @@
 
             <hr />
             <div class="w3-bar-item w3-center">
-                <p class="w3-small">VAV Dashboard System v.2.1.1</p>
+                <p class="w3-small">VAV Dashboard System v.2.2.0</p>
             </div>
 
         </div>
@@ -89,7 +89,7 @@
 
 <!-- Site Content -->
     <div class="" style="margin-left: 15%;" id="mainContent">
-    <!-- Top Navbar -->
+    <!-- Links Navbar -->
         <div class="w3-bar-block w3-theme-d5 w3-animate-right w3-hide-small">
             <div class="w3-bar-item">
                 <a href="dashboard.php" class="w3-text-white w3-hover-text-light-blue"><i class="fa fa-home"></i></a>
@@ -113,8 +113,48 @@
 
     <!-- Content -->
         <div class="">
-            <div class="w3-theme-l4">
-                <h5><?php echo "$staff_firstname $staff_lastname" ?></h5>
+        <!-- Left Bar -->
+            <div class="w3-quarter w3-theme-l1 w3-center w3-bar-block">
+                <div class="w3-padding-32 w3-bar-item w3-theme-d4 w3-container">
+                        <img class="w3-circle w3-left" src="http://static.josephthenara.com/vav-media/img/profile-picture/<?php echo $username.'.jpg'; ?>" style="width: 25%" alt="<?php echo $staff_en_name.' Avatar'; ?>">
+                    <div class="w3-container w3-right w3-center" style="width: 75%;">
+                        <h3 class="w3-left-align">
+                            <?php echo "$staff_en_name $staff_lastname $gender_icon"; ?><br>
+                            (<?php echo "$staff_ch_name"; ?>)
+                        </h3>
+                    </div>
+
+                </div>
+                <div class="w3-bar-item w3-theme-l5 w3-left-align w3-border-right">
+                    <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-large w3-text-theme"></i><?php echo "$dob_convert"; ?></p>
+                    <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-theme"></i><?php echo "B$staff_roomno"; ?></p>
+                    <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-theme"></i><?php echo "$staff_email"; ?></p>
+                    <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-theme"></i><?php echo "(+86) $staff_phone"; ?></p>
+                </div>
+            </div>
+
+        <!-- Main Bar -->
+            <div class="w3-half w3-theme-d2 w3-center w3-bar-block">
+                <div class="w3-container w3-bar-item">
+                    <h4>Content</h4>
+                </div>
+                <div class="w3-container w3-bar-item w3-display-container w3-theme-l5">
+                    <div class="w3-container">
+                        <h5 class="w3-text-red"><b>Empty Content!</b></h5>
+                        <h6>Content system is being created!</h6>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Right Bar -->
+            <div class="w3-quarter w3-theme-l1 w3-center w3-bar-block">
+                <div class="w3-bar-item w3-theme-d4">
+                    <h4>Recent Messages</h4>
+                </div>
+                <div class="w3-container w3-border-left w3-theme-l5">
+                    <h5 class="w3-text-red"><b>Message Empty!</b></h5>
+                    <h6>Messaging system under construction</h6>
+                </div>
             </div>
         </div>
     </div>
@@ -125,7 +165,7 @@
             <img src="http://static.josephthenara.com/vav-media/img/attribute/vav_web_logo.svg" height="50">
         </a>
         <p>Vis-à-Vis Organisation</p>
-        <p class="w3-small w3-panel w3-theme-l1">VAV Dashboard System v.2.1.1</p>
+        <p class="w3-small w3-panel w3-theme-l1">VAV Dashboard System v.2.2.0</p>
     </div>
 
 </body>

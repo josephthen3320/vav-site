@@ -149,7 +149,7 @@ include ('php/create_account.php');
 
 <!-- Site Content -->
     <div class="" style="margin-left: 15%;" id="mainContent">
-        <!-- Top Navbar -->
+        <!-- Links Navbar -->
             <div class="w3-bar-block su-theme-d5 w3-animate-right w3-hide-small">
                 <div class="w3-bar-item">
                     <a href="#" class="w3-text-white w3-hover-text-pink"><i class="fa fa-dragon"></i></a>

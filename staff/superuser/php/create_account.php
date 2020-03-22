@@ -32,14 +32,14 @@
         if (testInput($_POST["twoDeptChk"]) === "yes") {
             $user_vav_dept_2    =   testInput($_POST["dept02"]);
         } else {
-            $user_vav_dept_2    =   "";
+            $user_vav_dept_2    =   NULL;
         }
 
         $user_vav_prog_1    =   testInput($_POST["prog01"]);
         if (testInput($_POST["twoProgChk"]) === "yes") {
             $user_vav_prog_2    =   testInput($_POST["prog02"]);
         } else {
-            $user_vav_prog_2    =   "";
+            $user_vav_prog_2    =   NULL;
         }
 
         $acc_query  =   "INSERT INTO staff_login (username, password) VALUES ('$acc_username', '$acc_password')";
