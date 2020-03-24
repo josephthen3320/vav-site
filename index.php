@@ -360,8 +360,8 @@
                 <div class="w3-display-container w3-card" style="width: 100%;">
                     <a href="v-programmes/home-stay.php" class="w3-hover-opacity">
                         <img class="w3-round" src="http://static.josephthenara.com/vav-media/img/programme/HomeStay_01.jpg" width="100%">
-                        <h4 class="w3-display-bottommiddle w3-center w3-display-hover w3-theme w3-bar w3-panel w3-hide-small">SEEK</h4>
-                        <h5 class="w3-display-bottommiddle w3-center w3-theme w3-bar w3-panel w3-hide-large w3-hide-medium">SEEK</h5>
+                        <h4 class="w3-display-bottommiddle w3-center w3-display-hover w3-theme w3-bar w3-panel w3-hide-small">HOME STAY</h4>
+                        <h5 class="w3-display-bottommiddle w3-center w3-theme w3-bar w3-panel w3-hide-large w3-hide-medium">HOME STAY</h5>
                     </a>
                 </div>
             </div>
